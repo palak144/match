@@ -1,0 +1,95 @@
+.applicationRow {
+    padding: 0 0px 0px 0px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.divHead {
+    background-color: #314668;
+    color: white;
+    padding: 10px 5px 10px 15px;
+}
+
+.divMain {
+    border-style: ridge;
+}
+
+.thHead {
+    font-weight: bold;
+    text-align: left
+}
+
+.alighRight {
+    text-align: right;
+}
+
+.margin100 {
+    margin-bottom: 100px
+}
+
+.heightFixed {
+    max-height: 385px;
+    height: 385px;
+}
+
+.scrollExt {
+    height: 345px;
+    overflow: auto;
+}
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.rejectedRegion {
+    padding-top: 20px;
+}
+
+.card {
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    height: 213px;
+}
+
+.links {
+    color: #6F91C8 !important;
+    text-decoration: underline !important;
+    background-color: transparent;
+    cursor: pointer !important;
+}
+
+.linkDiv {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+
+/*------------------------------------
+    media query (max-width: 767px)
+------------------------------------*/
+
+@media (max-width: 767px) {
+    .divHead {
+        margin-top: 15px;
+    }
+}
+
+.userName {
+    text-align: right;
+    padding-top: 15px;
+    color: brown;
+}
+
+.titlePaddingAdmin {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.paddingStyles {
+    padding: 12px;
+}

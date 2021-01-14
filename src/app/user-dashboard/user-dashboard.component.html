@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li><a [routerLink]="['/secure/user-dashboard']">{{ 'breadcrum.My-Dasboard' | translate }}</a></li>
+        </ul>
+
+    </div>
+</div>
+<ng4-loading-spinner></ng4-loading-spinner>
+<div class="container ">
+    <h1 class="pageHeadingName">{{ 'breadcrum.My-Dasboard' | translate }}</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-sm-7 fullWiddth">
+            <div class="row divBorder clearfix">
+                <div class="col-md-5 col-sm-5 profileInfo profile">
+                    <div class="col">
+                        <img class="iconImg" src="assets/images/userDashboardIcon.png" /></div>
+                    <div class="col">
+                        <p class="joiningName">{{ 'Dasboard.Joined-On' | translate }}<br>{{this.formatedDate}}</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 alignCenter profileInfo">
+                    <div class="">
+                        <div *ngIf="this.gotData==true">
+                            <h1>{{this.UserDataResponseObj.applicantFirstName}} {{this.UserDataResponseObj.applicantLastName}}</h1>
+                        </div>
+                        <div *ngIf="this.gotData==true"><a href="#">{{this.UserDataResponseObj.email}}</a></div>
+                        <div *ngIf="this.gotData==true">
+                            <p class="bio">{{this.UserDataResponseObj.applicantOrganizationName}}</p>
+                        </div>
+                        <!-- <a class="btn call-to-action" href="https://www3.wipo.int/authpage/signin.xhtml" title="">Manage Account</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-5 fullWiddth">
+
+            <div class="card">
+                <h3 class="headingH3">{{ 'Dasboard.Existing-Offer/Need-Links' | translate }}</h3>
+                <div class="linkDiv">
+                    <ul class="list-group list-group-flush">
+                        <a class="links">
+                            <li class="list-group-item" (click)="navigate(link.eoiRequest,link.eoiTypeId,'0')" *ngFor="let link of existingNeedOfferLink">{{link.eoiRequestTitle}}</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rejectedRegion1">
+
+    <div class="container">
+        <button class="btn-block call-to-action" [routerLink]="['/search']" title="">{{ 'Dasboard.Search' | translate }}</button>
+    </div>
+</div>
+<div class="container ">
+    <div class="row">
+        <div class=" col-md-6 ">
+            <div class=" ">
+                <h3 class="">{{ 'Dasboard.My-Offers' | translate }}</h3>
+            </div>
+            <div class="card CardOffer">
+                <div class=" col-md-12 ">
+                    <div class="col-md-6 boderBetween new">
+                        <p class="dynamicCounter">{{this.UserOfferCountObj}}</p>
+                    </div>
+                    <div class="col-md-6 new">
+
+                        <a class="btn call-to-action postButton" href="https://wwwww3-test.wipo.int/match/secure/donor-offer-form/1" title="">{{ 'Dasboard.Create-a-Offer' | translate }}</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h3 class="paddingTop">{{ 'Dasboard.My-Needs' | translate }}</h3>
+            </div>
+            <div class="card CardOffer">
+                <div class=" col-md-12 ">
+                    <div class="col-md-6 boderBetween new">
+                        <p class="dynamicCounter">{{this.UserNeedCountObj}}</p>
+                    </div>
+                    <div class="col-md-6 new">
+                        <a class="btn call-to-action postButton" href="https://www3.wipo.int/match/secure/seeker-need-form/2" title="">{{ 'Dasboard.Create-a-Need' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rejectedRegion1">
+    <div class="container">
+        <div class="card">
+            <h3 class="headingH3">{{ 'Dasboard.Rejected-Offer/Need-Links' | translate }}</h3>
+            <div class="linkDiv">
+                <ul class="list-group list-group-flush">
+                    <a class="links">
+                        <li class="list-group-item" (click)="navigate(link.eoiRequest,link.eoiTypeId,'1')" *ngFor="let link of UserRejectedNeedOfferLinkObj">{{link.eoiRequestTitle}}</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

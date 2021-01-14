@@ -1,0 +1,175 @@
+/* popup css */
+
+.wipoClass {
+    background: #263147;
+    color: white;
+}
+
+.statusBar {
+    padding: 10px;
+}
+
+.modal-dialog {
+    width: 1000px
+}
+
+.wipoLabels {
+    font-weight: 50
+}
+
+.website_error {
+    margin-top: -13px !important;
+    margin-left: 2px !important;
+}
+
+.spcall {
+    padding: 5px 0 5px 0;
+}
+
+.wipoImg img,
+.wipoImgNotProcessed img {
+    width: 25px;
+    margin: 0px 5px;
+}
+
+.spcUd {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(1.5em + .75rem + 2px) !important;
+}
+
+.spc {
+    padding: 5px;
+}
+
+h6.siz {
+    font-size: 16px;
+}
+
+form .btn:hover {
+    color: #0056b3;
+    border: 0;
+    background: white
+}
+
+.warning {
+    width: 150px !important;
+}
+
+.bg {
+    background-color: #314668;
+    text-align: right
+}
+
+.bg button {
+    color: #fff;
+}
+
+span.wipoImgNotProcessed {
+    display: block;
+    margin: 25px 0px 10px;
+    text-align: center;
+}
+
+.col-md-2.form-group.center {
+    text-align: center;
+}
+
+.errors {
+    display: block;
+    width: 100%;
+    font-size: 80%;
+    color: #dc3545;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+button[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed !important;
+}
+
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.ImgIcon {
+    padding-right: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+form .btn:hover,
+form .btn-primary:hover,
+button.btn:hover,
+button.btn-primary:hover,
+.call-to-action:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #75839a;
+    border: 1px solid #536581;
+    border-color: #75839a;
+    cursor: pointer;
+}
+
+angular2-multiselect.myclass.custom-class.form-control.ng-touched.ng-dirty.ng-valid {
+    padding: 0px;
+    height: 32px;
+}
+
+angular2-multiselect.myclass.custom-class.ng-untouched.ng-pristine.ng-invalid.form-control.is-invalid {
+    padding: 0px;
+    height: 32px;
+}
+
+angular2-multiselect.myclass.custom-class.form-control.ng-touched.ng-dirty.is-invalid.ng-invalid {
+    padding: 0px;
+    height: 32px;
+}
+
+angular2-multiselect.myclass.custom-class.ng-untouched.ng-pristine.ng-valid.form-control.form-control-override {
+    padding: 0px;
+    height: 32px;
+}
+
+angular2-multiselect.myclass.custom-class.ng-untouched.ng-pristine.ng-valid.form-control {
+    padding: 0px;
+    height: 32px;
+}
+
+angular2-multiselect.myclass.custom-class.ng-untouched.ng-pristine.form-control.form-control-override.ng-invalid {
+    padding: 0;
+    height: 32px;
+}
+
+@media (max-width:767px) {
+    .bg {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+.accordion>.card .card-header {
+    margin-bottom: -1px;
+    padding: 5px !important;
+}
+
+.accordion>.card .card-header button {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+div#headingOneApprove2 {
+    padding: 5px !important;
+}
+
+button.btn.btn-link.blu {
+    width: 100%;
+    text-align: left;
+    padding: 5px !important;
+}

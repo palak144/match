@@ -1,0 +1,182 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/FAQs']">{{ 'breadcrum.faqs' | translate }} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px"></li>
+        </ul>
+    </div>
+</div>
+<div class="pageHeadingRegion">
+    <div class="container ">
+        <h1 class="pageHeadingName">{{ 'breadcrum.faqs' | translate }}</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="accordion" id="accordionExample">
+
+        <div class="card">
+            <div class="card-header card-header1 navyBlue" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link blu collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <span class="floatLeft">{{'faqs.heading1' | translate}}</span>
+          </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse hide stripColor" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body"> {{'faqs.para1' | translate}}</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header card-header1 navyBlue" id="heading1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link blu collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+         <span class="floatLeft">{{'faqs.heading2' | translate}}</span>
+          </button>
+                </h2>
+            </div>
+
+            <div id="collapse1" class="collapse hide stripColor" aria-labelledby="heading1" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <ol>
+                        <li>{{'faqs.para2.1' | translate}}</li>
+                        <li> {{'faqs.para2.2' | translate}}</li>
+                        <li>{{'faqs.para2.3' | translate}}</li>
+                        <li>{{'faqs.para2.4' | translate}}</li>
+                        <ol type="a">
+                            <li>{{'faqs.para2.a' | translate}}</li>
+                            <li>{{'faqs.para2.b' | translate}}</li>
+                            <li>{{'faqs.para2.c' | translate}}</li>
+                            <li>{{'faqs.para2.d' | translate}}</li>
+                            <li>{{'faqs.para2.e' | translate}}</li>
+                            <li>{{'faqs.para2.f' | translate}}</li>
+                            <li>{{'faqs.para2.g' | translate}}</li>
+                            <li>{{'faqs.para2.h' | translate}}</li>
+                            <li>{{'faqs.para2.i' | translate}}</li>
+                            <li>{{'faqs.para2.j' | translate}}</li>
+                            <li>{{'faqs.para2.k' | translate}}</li>
+                            <li>{{'faqs.para2.l' | translate}}</li>
+                            <li>{{'faqs.para2.m' | translate}}</li>
+                            <li>{{'faqs.para2.n' | translate}}</li>
+                            <li>{{'faqs.para2.o' | translate}}</li>
+                            <li>{{'faqs.para2.p' | translate}}</li>
+                            <li>{{'faqs.para2.q' | translate}}</li>
+                            <li>{{'faqs.para2.r' | translate}}</li>
+                            <li>{{'faqs.para2.s' | translate}}</li>
+                            <li>{{'faqs.para2.t' | translate}}</li>
+                            <li>{{'faqs.para2.u' | translate}}</li>
+                        </ol>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header card-header1 navyBlue" id="heading0">
+                <h2 class="mb-0">
+                    <button class="btn btn-link blu collapsed" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+           <span class="floatLeft">{{'faqs.heading3' | translate}}</span>
+          </button>
+                </h2>
+            </div>
+
+            <div id="collapse0" class="collapse hide stripColor" aria-labelledby="heading0" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <b>{{'faqs.subheading3' | translate}}</b>
+                    <p>{{'faqs.para3' | translate}}
+                        <ul>
+                            <li>{{'faqs.para3.1' | translate}}</li>
+                            <li>{{'faqs.para3.2' | translate}}</li>
+                        </ul>
+                        <p><img src="assets/images/Faq-Img.png"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header card-header1 navyBlue" id="headingOne1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link blu collapsed" type="button" data-toggle="collapse" data-target="#collapseOne0" aria-expanded="true" aria-controls="collapseOne0">
+           <span class="floatLeft">{{'faqs.heading4' | translate}}</span>
+          </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne0" class="collapse hide stripColor" aria-labelledby="headingOne1" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <p><b>{{'faqs.subheading4' | translate}}</b></p>
+                    <h5 style="color:black"><b>{{'faqs.Supporters' | translate}}</b></h5>
+                    <p>{{'faqs.Supporters.para1' | translate}}</p>
+                    <p> {{'faqs.Supporters.infoheading' | translate}}</p>
+                    <ul>
+                        <li>{{'faqs.Supporters.infoheading.1' | translate}}</li>
+                        <li>{{'faqs.Supporters.infoheading.2' | translate}} </li>
+                        <li>{{'faqs.Supporters.infoheading.3' | translate}}</li>
+                        <li>{{'faqs.Supporters.infoheading.4' | translate}}</li>
+
+                    </ul>
+                    <h6 style="color:green"><b>{{'faqs.Seekers.Benefits' | translate}}</b></h6>
+                    <ul>
+                        <li>{{'faqs.Seekers.Benefits1' | translate}}</li>
+                        <li>{{'faqs.Seekers.Benefits2' | translate}}</li>
+                        <li>{{'faqs.Seekers.Benefits3' | translate}}</li>
+
+                    </ul>
+                    <h5 style="color:black"><b>{{'faqs.Seekers' | translate}}</b></h5>
+                    <p>{{'faqs.Seekers.para1' | translate}}</p>
+                    <p>{{'faqs.Seekers.infoheading' | translate}}</p>
+                    <ul>
+                        <li>{{'faqs.Seekers.infoheading.1' | translate}}</li>
+                        <li>{{'faqs.Seekers.infoheading.2' | translate}}</li>
+                        <li>{{'faqs.Seekers.infoheading.3' | translate}}</li>
+                        <li>{{'faqs.Seekers.infoheading.4' | translate}}</li>
+                        <li>{{'faqs.Seekers.infoheading.5' | translate}}</li>
+                        <li>{{'faqs.Seekers.infoheading.6' | translate}}</li>
+                    </ul>
+                    <h6 style="color:green"><b>{{'faqs.Seekers.Benefits' | translate}}</b></h6>
+                    <ul>
+                        <li>{{'faqs.Seekers.Benefits1' | translate}}</li>
+                        <li>{{'faqs.Seekers.Benefits2' | translate}}</li>
+                        <li>{{'faqs.Seekers.Benefits3' | translate}}</li>
+
+                    </ul>
+                    <h5 style="color:black"><b>{{'faqs.Providers' | translate}}</b></h5>
+                    <p>{{'faqs.Providers.infoheading' | translate}}</p>
+                    <ul>
+                        <li>{{'faqs.Providers.infoheading.1' | translate}} </li>
+                        <li> {{'faqs.Providers.infoheading.2' | translate}}</li>
+                        <li> {{'faqs.Providers.infoheading.3' | translate}}</li>
+                        <li> {{'faqs.Providers.infoheading.4' | translate}} </li>
+                        <li>{{'faqs.Providers.infoheading.5' | translate}} </li>
+                    </ul>
+                    <h6 style="color:green"><b>{{'faqs.Providers.Benefits3' | translate}}</b></h6>
+                    <ul>
+                        <li>{{'faqs.Providers.Benefits1' | translate}}</li>
+                        <li>{{'faqs.Providers.Benefits2' | translate}}</li>
+                        <li>{{'faqs.Providers.Benefits3' | translate}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

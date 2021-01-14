@@ -1,0 +1,86 @@
+<div class="container tab-padding">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <div class="row pd-to-20">
+        <p class="table-heading">Untouched EOI Application </p>
+    </div>
+    <div class="row">
+        <table class="table resposiveTbl">
+            <tr class="th-header">
+                <th colspan="1" scope="col-sm-1" style="width: 0%;">Select</th>
+                <th colspan="2" scope="col-sm-1" style="width: 9%;">EOI Id</th>
+                <th colspan="2" scope="col-sm-2" style="width: 55%;">EOI Req. Title</th>
+                <th colspan="3" scope="col-sm-2" style="width: 20%;">Inst/Org Name</th>
+                <th colspan="3" scope="col-sm-2" style="width: 16%;">EOI Req. Type</th>
+                <th colspan="2" scope="col-sm-2" style="width: 20%;min-width: 150px;">App Type</th>
+            </tr>
+            <tbody class="table-striped">
+                <tr *ngFor="let item of uneoiApplication.data | paginate: configUn">
+                    <td colspan="1" scope="col-sm-1"><strong>Select </strong>
+                        <img (click)="selected(item.eoiRequestId)" src="assets/images/convert.png" class="pointer" />
+                    </td>
+                    <td colspan="2" scope="col-sm-1"><strong>EOI Id </strong>{{item.eoiRequestId}}</td>
+                    <td colspan="2" scope="col-sm-2"><strong>EOI Req. Title</strong>{{item.eoiRequestTitle}}</td>
+                    <td colspan="3" scope="col-sm-2"><strong>Inst/Org Name</strong>{{item.organisationName}}</td>
+                    <td colspan="3" scope="col-sm-2"><strong>EOI Req. Type </strong>{{item.eoiRequestType}}</td>
+                    <td colspan="2" scope="col-sm-2"><strong>App Type </strong>{{item.partyIdDesc}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="container" *ngIf="uneoiApplication.data.length==0">
+            <a class="emptyTable">No Records Found</a>
+        </div>
+        <div class="container" *ngIf="uneoiApplication.data.length!=0">
+            <div class="example pull-right paginationcontrol">
+                <nav aria-label="Demo of active current page number">
+                    <pagination-controls (pageChange)="pageChangedUn($event)" id="configUn"></pagination-controls>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="row pd-to-20">
+        <p class="table-heading">Rejected and Updated Eoi Application</p>
+    </div>
+    <div class="row">
+        <table class="table resposiveTbl">
+            <tr class="th-header">
+                <th colspan="1" scope="col-sm-1" style="width: 0%;">Select</th>
+                <th colspan="2" scope="col-sm-1" style="width: 9%;">EOI Id</th>
+                <th colspan="2" scope="col-sm-2" style="width: 55%;">EOI Req. Title</th>
+                <th colspan="3" scope="col-sm-2" style="width: 20%;">Inst/Org Name</th>
+                <th colspan="2" scope="col-sm-2" style="width: 16%;">EOI Req. Type</th>
+                <th colspan="3" scope="col-sm-2" style="width: 20%;min-width: 150px;">App Type</th>
+            </tr>
+            <tbody class="table-striped">
+                <tr *ngFor="let item of updatedAfterRejectionApplications.data | paginate: configReject">
+                    <td colspan="1" scope="col-sm-1"><strong>Select</strong>
+                        <img type="radio" name="radiogroup" (click)="selected(item.requestId)" src="assets/images/convert.png" class="pointer" />
+                    </td>
+                    <td colspan="2" scope="col-sm-1"><strong>EOI Id </strong>{{item.requestId}}</td>
+                    <td colspan="2" scope="col-sm-2"><strong>EOI Req. Title </strong>{{item.requestTitle}}</td>
+                    <td colspan="3" scope="col-sm-2"><strong>Inst/Org Name </strong>{{item.orgName}}</td>
+                    <td colspan="3" scope="col-sm-2"><strong>EOI Req. Type</strong>{{item.proposalType}}</td>
+                    <td colspan="2" scope="col-sm-2"><strong>App Type</strong>{{item.partyType}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container" *ngIf="updatedAfterRejectionApplications.data.length==0">
+            <a class="emptyTable">No Records Found</a>
+        </div>
+        <div class="container" *ngIf="updatedAfterRejectionApplications.data.length!=0">
+            <div class="example pull-right paginationcontrol">
+                <nav aria-label="Demo of active current page number">
+                    <pagination-controls (pageChange)="pageChangedReject($event)" id="configReject"></pagination-controls>
+                </nav>
+            </div>
+        </div>
+        <div class="container" *ngIf="">
+            <ng-template #no_data_templ>
+                <div class="alert alert-success noRecord"  role="alert">
+                    <h4 class="alert-heading">No Records found!</h4>
+        </div>
+        </ng-template>
+    </div>
+</div>
+
+</div>

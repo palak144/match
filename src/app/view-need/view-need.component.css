@@ -1,0 +1,83 @@
+.org_logo {
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+.summarytitle {
+    padding-top: 15px;
+}
+
+.detail {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+    height: 150px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+.column {
+    float: left;
+    padding-right: 10px;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.box {
+    border: 1px solid #e7e7e7;
+    margin-bottom: 7px;
+    padding-top: 15px;
+}
+
+.box__header {
+    padding-left: 18px;
+}
+
+.hrborder {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.heading {
+    margin-bottom: 18px
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+a.btn.call-to-action {
+    width: max-content;
+}
+
+
+/* If you want the content centered horizontally and vertically */

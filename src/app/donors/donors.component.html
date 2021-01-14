@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/donors']">{{ 'breadcrum.donors' | translate }} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px"></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <h1 class="titlePadding">{{'donors.avai.offers' | translate}} ({{offerCount}})</h1>
+</div>
+<div class="seekerRegion">
+    <div class="container">
+        <div class="col-md-12 seekerRegionWipo" *ngIf="(donor.data?.length && !loader) ">
+            <div class="row needslist" *ngFor="let donor of donor.data | paginate: config">
+                <div class="col-90 component-logo logoImg">
+                    <a (click)="navigatetoViewOffer(donor)"><img width="150px" src={{donor.companyLogo}} class="imgLink"></a>
+                </div>
+                <div class="col needdetails ">
+                    <h3 class="needid"><a class="link" (click)="navigatetoViewOffer(donor)">   {{donor.proposalTitle}}</a></h3>
+                    <div [innerHTML]="donor.proposalDescription"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="container" *ngIf="(donor.data?.length && !loader)">
+    <div class="example pull-right paginationcontrol">
+        <nav aria-label="Demo of active current page number">
+            <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+        </nav>
+    </div>
+</div>

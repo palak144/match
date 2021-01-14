@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/our-mission']">{{'breadcrum.mission' | translate}} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px"></li>
+        </ul>
+    </div>
+</div>
+<div class="pageHeadingRegion">
+    <div class="container ">
+        <h1 class="pageHeadingName">{{'breadcrum.mission' | translate}}</h1>
+        <h2 class="subHeading">{{'mission.subHeading'|translate}}</h2>
+        <h3 class="subSubHeading">{{'mission.subSubHeading'| translate}}</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="row marginBottom">
+        <div class="col-sm-12">
+            <div class="media pd-10">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-pd-10" src="assets\images\one-img.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">{{'mission.1' | translate}} </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="media pd-10">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-pd-10" src="assets\images\two-img.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    {{'mission.2'| translate}}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="media pd-10">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-pd-10" src="assets\images\three-img.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    {{'mission.3' | translate}}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="media pd-10">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-pd-10" src="assets\images\four-img.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    {{'mission.4' | translate}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

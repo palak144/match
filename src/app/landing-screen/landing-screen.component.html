@@ -1,0 +1,278 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="wipoMatchLogo">WIPO Match</h1>
+    <h2>Leveraging the IP Development</h2>
+</div>
+<div class="VideoRegion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bannerVideoSignup">
+                <div class="row">
+                    <div class="column col-sm-6 col-md-6 component-video">
+                        <video width="100%" height="100%" width="100%" controls class="video">
+              <source type="video/mp4">
+            </video>
+                    </div>
+                    <div class="column col-sm-6 col-md-6 component-signup">
+                        <img src="assets/images/puzzle.jpg" width="100%" height="100%" class="puzzleImg">
+                        <button class="btn btn-primary sign-in " (click)="openModal(template)">Sign in / Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="missionRegion">
+    <div class="container">
+        <div class="row ">
+            <div class=" col-md-12">
+                <div class="missionWipo clearfix">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h2 class="missionHeading">Our Mission</h2>
+                    </div>
+                    <div class="col-md-12 col-sm-12 ">
+                        <p class="row missionText">o provide an accessible platform helping IP stakeholders to connect easier and innovate faster to improve lives everywhere.</p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 " style="text-align: center ; padding: 0px 0px 20px 1px; ">
+                        <a class="btn call-to-action" [routerLink]="['/our-mission']" title="">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="salientFeatureRegion">
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-12 salientFeatureWipo">
+                <div class="row salientFeatureWipoRow">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h2 class="salientFeatureWipoH1">Salient Features </h2>
+                    </div>
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="salientFeatureWipoH4">Unique features of WIPO Match Leveraging IP for Development</h3>
+                    </div>
+                    <div class=" col-md-12 col-sm-12 salientFeatureWipoTextBox">
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1"> Free <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2">Free access to be part of the WIPO Match community,network and related projects .</div>
+                        </div>
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1">Simple <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2">The database has a simple user interface with quick access to requirements .</div>
+                        </div>
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1">Organized <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2">It is well organized and allows for easy location of the requirements .</div>
+                        </div>
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1">Natural <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2"> A layman can also quickly and intuitively understand how to locate his/her needs .</div>
+                        </div>
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1">Consistent <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2">It will not malfunction or crash and is reliable .
+                            </div>
+                        </div>
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1">Reliable <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2"> All needs and offers go through a due diligence from the WIPO Match team .</div>
+                        </div>
+                        <div class="row salientFeatureWipoText">
+                            <div class="col-sm-2 col-xs-12 salientFeatureWipoText1">Global Network <span>:</span></div>
+                            <div class="col-sm-10 col-xs-12 salientFeatureWipoText2">Part of the Technology Facilitation Mechanism, United Nations, to support the 2030 Agenda for Sustainable Development .</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12" style="text-align: center ; padding: 10px">
+                        <a class="btn call-to-action" [routerLink]="['/salient-features']" title="">Come in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offersAndNeedsRegion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 offersAndNeedsRegionWipo">
+                <div class="row ">
+                    <div class="col-md-12 col-sm-12 offersAndNeedsRegionH1">
+                        <a [routerLink]="['/search']" class="">Search for offers and needs</a></div>
+                    <div class="col-md-12 col-sm-12">
+                        <div class="column cardview">
+                            <div class="card CardSeeker" (click)="seekerSpecificPage()">
+                                <div class="card-body">
+                                    <!-- <img class="card-img-top" src="images-wipoLatest/seekers-icon.png" id=seeker > -->
+                                    <div id="seeker"></div>
+                                    <h4 class="card-title">Seekers</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column cardview">
+                            <div class="card CardDonor" (click)="donorSpecificPage()">
+                                <div class="card-body">
+                                    <!--   <img class="card-img-top" src="images-wipoLatest/donors-icon.png"> -->
+                                    <div id="donor"></div>
+                                    <h4 class="card-title">Donors</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column cardview">
+                            <div class="card CardSupporter" (click)="supporterSpecificPage()">
+                                <div class="card-body">
+                                    <!--  <img class="card-img-top" src="images-wipoLatest/supporters-icon.png"> -->
+                                    <div id="supporter"></div>
+                                    <h4 class="card-title">Supporters</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column cardview">
+                            <div class="card CardSuccessStories" (click)="successStoryPage()">
+                                <div class="card-body">
+                                    <!--  <img class="card-img-top" src="images-wipoLatest/success-stories-icon.png"> -->
+                                    <div id="successStories"></div>
+                                    <h4 class="card-title">Success Story</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column cardview">
+                            <div class="card CardSuccessStories" (click)="wallOfChampionPage()">
+                                <div class="card-body">
+                                    <!--  <img class="card-img-top" src="images-wipoLatest/success-stories-icon.png"> -->
+                                    <div id="community"></div>
+                                    <h4 class="card-title mt-0 marginCustom">Our Community</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foundingChampions">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 foundingChampionsWipo">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 foundingChampionsWipoH1">
+                        <a [routerLink]="['/wall-of-champions']" class="">Our Founding Champions</a>
+                    </div>
+                    <div class="ChampionsLogo" padding="10px">
+                        <div class="container" width="100%">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="demo" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ul class="carousel-indicators">
+                                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                            <li data-target="#demo" data-slide-to="1"></li>
+                                            <li data-target="#demo" data-slide-to="2"></li>
+                                        </ul>
+
+                                        <div class="container carousel-inner no-padding">
+                                            <div class="carousel-item active">
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo01.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo02.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo03.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo04.png">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo05.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo06.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo09.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo08.png">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo07.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo10.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo11.png">
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                                    <img src="assets/images/i-logo12.png">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Left and right controls -->
+                                        <a class="carousel-control-prev carousel-control" href="#demo" data-slide="prev">
+                                            <img src="assets/images/prev.png" />
+                                        </a>
+                                        <a class="carousel-control-next carousel-control" href="#demo" data-slide="next">
+                                            <img src="assets/images/next.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #template>
+    <div class="modal-header">
+        <h2 class="modal-title pull-left">Wipo Match</h2>
+        <button type="button" class="close pull-right" (click)="modalRef.hide()">
+    <span class="closeSpan" aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="container heading">
+        <h2 class="wipoMatch">Welcome To Wipo Match</h2>
+        <h3 class="wipoMatch">Sign in as</h3>
+        <div class="row ">
+            <div class="col-md-6 ">
+                <a class="btn-block call-to-action" data-dismis="modal" (click)="onSubmit()" title="">Admin</a></div>
+            <div class="col-md-6 ">
+
+                <a class="btn-block call-to-action" href="https://www3.wipo.int/match/secure/user-dashboard" title="">User</a>
+            </div>
+        </div>
+        <!-- <h3 class="wipoMatch">Sign Up</h3>
+        <a>Create a Wipo Account</a> -->
+    </div>
+</ng-template>

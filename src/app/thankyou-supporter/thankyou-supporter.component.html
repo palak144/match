@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a >{{ 'breadcrum.thankyou' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px"></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="wrap-outer">
+        <div class="wrap-inner">
+            <h1>{{ 'breadcrum.thankyou' | translate }}</h1>
+            <!-- Form Starts -->
+            <div class="content" style="min-height: 300px">
+                <p>Thank you for submitting. <a [routerLink]="['/supporters']">{{ 'thankyou.click' | translate }}</a> to view WIPO MATCH supporters.
+                </p>
+            </div>
+            <!-- Form End -->
+        </div>
+    </div>
+    <!-- wrap-outer -->
+</div>

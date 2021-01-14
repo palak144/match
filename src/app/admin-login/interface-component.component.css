@@ -1,0 +1,17 @@
+.container.heading {
+    padding: 30px;
+    text-align: center;
+}
+
+.component-footer {
+    width: 50%;
+    float: left;
+}
+
+.modal-header {
+    background: #314668;
+}
+
+.centerAlign {
+    text-align: center
+}

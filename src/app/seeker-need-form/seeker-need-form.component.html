@@ -1,0 +1,193 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a (click)="breadcrumbNav()" class="anchorStyle">{{navFrom | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                {{typeHeader | translate}}
+            </li>
+            <li style="margin : 2px 9px 0 9px"></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <h1>{{typeHeader | translate}}</h1>
+</div>
+<div class="container ">
+    <div class="lineLeft">
+        <p class="para">{{'global.fieldsMarked' | translate}}
+            <span class="asterick">*</span>{{'global.compulsory' | translate}}</p>
+    </div>
+</div>
+<div class="container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <form [formGroup]="seekerNeedForm">
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <label>{{'global.title' |translate}}
+                    <span class="asterick">*</span>
+                </label>
+                <input type="text" formControlName="title" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }" id="title" name="title">
+                <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                    <div *ngIf="f.title.errors.required">{{'global.title.required'| translate}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <label>{{'form.summaryOfProp' | translate}}
+                    <span class="asterick">*</span>
+                </label>
+                <ckeditor formControlName="summaryOfProposal" id="title" name="title" disabled="true" (change)="editorValidation(1)"></ckeditor>
+                <div *ngIf="summaryOfProposal_validate && submitted">
+                    <div class="errors">{{'form.summaryOfProp' | translate}}</div>
+            </div>
+        </div>
+</div>
+<div class="row">
+    <div class="col-md-12 form-group">
+        <label>{{'form.url' | translate}}
+                    <span class="asterick">*</span>
+                </label>
+        <input type="text" formControlName="projectUrl" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.projectUrl.errors }" id="projectUrl" name="projectUrl">
+        <div *ngIf="submitted && f.projectUrl.errors" class="invalid-feedback">
+            <div *ngIf="f.projectUrl.errors.required">{{'form.urlRequired' | translate}}</div>
+            <div *ngIf="f.projectUrl.errors.pattern">{{'form.validUrlRequired' | translate}}</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 form-group">
+        <label>{{'form.need' |translate}}
+                    <span class="asterick">*</span>
+                </label>
+        <ckeditor formControlName="whatDoINeed" (change)="editorValidation(2)"></ckeditor>
+
+        <div *ngIf="whatDoINeed_validate && submitted">
+            <div class="errors">{{'form.needRequired' | translate}}</div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-12 form-group">
+        <label>{{'form.partner' | translate}}
+                    <span class="asterick">*</span>
+                </label>
+        <ckeditor formControlName="weWishToPartnerWith" (change)="editorValidation(3)"></ckeditor>
+
+        <div *ngIf="weWishToPartnerWith_validate && submitted">
+            <div class="errors">{{ 'form.partnerRequired' | translate }}</div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-6 form-group">
+        <label>{{'form.ipField' | translate}} <span class="asterick">*</span>
+                </label>
+        <angular2-multiselect name="ipFields" [data]="ipField" formControlName="ipFields" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.ipFields.errors }" [(ngModel)]="selected_ipFields" [settings]="dropdownSettings" disabled>
+        </angular2-multiselect>
+        <div *ngIf="submitted && f.ipFields.errors" class="invalid-feedback">
+            <div *ngIf="f.ipFields.errors.required">{{'form.ipFieldRequired' | translate}}</div>
+        </div>
+    </div>
+    <div class="col-md-6 form-group">
+        <label>{{'form.intCountry' | translate}} </label>
+        <angular2-multiselect name="ddCountries" [data]="countryName" formControlName="countries" class="form-control form-control-override" [(ngModel)]="selected_countries" [settings]="dropdownSettings" disabled>
+        </angular2-multiselect>
+
+    </div>
+
+    <div class="col-md-6 form-group">
+        <label>{{'form.sdgs' | translate}} </label>
+        <angular2-multiselect name="ddSDG" [data]="sdg" formControlName="sdgs" class="form-control form-control-override" [(ngModel)]="selected_sdg" [settings]="dropdownSettings" disabled>
+        </angular2-multiselect>
+
+    </div>
+    <div class="col-md-6 form-group">
+        <label>{{'form.techAssist' | translate}}</label>
+        <angular2-multiselect name="ddTechAss" [data]="techAssistance" formControlName="techAssistances" class="form-control" [(ngModel)]="selected_techAssistances" [settings]="dropdownSettings" disabled>
+        </angular2-multiselect>
+
+    </div>
+
+    <div class="col-md-6 form-group">
+        <label>{{'form.techFields' | translate}}
+                </label>
+        <angular2-multiselect name="dropdown" [data]="techField" formControlName="techFields" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.techFields.errors }" [(ngModel)]="selected_techFields" [settings]="dropdownSettings" (onClose)="onClose($event)"
+            disabled>
+        </angular2-multiselect>
+        <div *ngIf="submitted && f.techFields.errors" class="invalid-feedback">
+            <div *ngIf="f.techFields.errors.required">{{'form.techFieldRequired' | translate}}</div>
+        </div>
+    </div>
+    <div class="col-md-6 form-group">
+        <label>{{'form.subTechField' | translate}}  
+                </label>
+        <angular2-multiselect name="dropdown" [data]="subTechField" formControlName="subTechFields" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.subTechFields.errors }" [(ngModel)]="selected_subTechFields" [settings]="dropdownSettings" disabled>
+        </angular2-multiselect>
+        <div *ngIf="submitted && f.subTechFields.errors" class="invalid-feedback">
+            <div *ngIf="f.subTechFields.errors.required">{{'form.subTechFieldRequired' | translate}}</div>
+        </div>
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="file">{{'form.orgLogo' | translate}}</label>
+        <div class=" row">
+            <div class="col-md-2 form-group center">
+                <label for="file">
+                            <img width="80px" height="80px" [src]="companyFlagSize ? companyLogo : dLogo" class="ImgIcon" /> </label>
+            </div>
+            <div class="col-md-10 ">
+                <input type="file" accept="image/*" id="chooseFile" (change)="onOrganizationLogoChange($event)" formControlName="organizationLogo" class="form-control form-control-override chooseFile">
+                <span id="sizeValidations">{{'global.imageSize' | translate}}</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="file">{{'form.projLogo' | translate}}</label>
+        <div class=" row">
+            <div class="col-md-2 form-group center">
+                <label for="file">
+                            <img width="80px" height="80px" [src]="projectFlagSize ? projectLogo : dLogo" class="ImgIcon" /> </label>
+            </div>
+            <div class="col-md-10 ">
+                <input type="file" accept="image/*" id="chooseFile1" (change)="onuploadProjPicChange($event)" formControlName="uploadProjPic" class="form-control form-control-override chooseFile">
+                <span id="sizeValidations1">{{'global.imageSize' | translate}}</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-6 form-group">
+        <label>{{' form.proposedBud' | translate}} 
+                </label>
+        <input type="number" min="0" placeholder="Enter Proposed Budget" formControlName="proposedBug" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.proposedBug.errors }" id="proposedBug" name="proposedBug">
+        <div *ngIf="submitted && f.proposedBug.errors" class="invalid-feedback">
+            <div *ngIf="f.proposedBug.errors.required">{{'form.proposedBudRequired' | translate}}</div>
+        </div>
+    </div>
+
+</div>
+<div class="row divBtn">
+    <div class="col-md-12 form-group">
+        <a class="btn call-to-action" (click)="onSubmit()" title="">{{btnstatus | translate}}</a>
+        <input class="btn btn-info" (click)="onReset()" type="reset" name="Reset" value="Reset">
+    </div>
+</div>
+</form>
+</div>

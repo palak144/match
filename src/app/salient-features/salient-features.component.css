@@ -1,0 +1,140 @@
+/* custom csss */
+
+[data-toggle="collapse"]:after {
+    display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    transform: rotate(270deg);
+    transition: all linear 0.25s;
+    float: right;
+}
+
+[data-toggle="collapse"].collapsed:after {
+    transform: rotate(90deg);
+}
+
+.accordion h2 button.btn {
+    text-align: left;
+    padding: 5px 15px !important;
+}
+
+.panel ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.spc {
+    margin: 5px
+}
+
+.marginBottom {
+    margin-bottom: 100px !important
+}
+
+.paraHeading {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px !important
+}
+
+.divColor {
+    background-color: #eee !important
+}
+
+.accordianHeading {
+    float: left;
+    padding: 5px 16px;
+}
+
+.navyBlue {
+    color: white;
+    background: #3A496A;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-header1 {
+    padding-left: 0;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.ch {
+    padding: 0;
+}
+
+.spcLgDwn {
+    margin-bottom: 100px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.line {
+    border: 0.5px solid #ded5d5;
+    margin: 5px 0 5px 0;
+}
+
+.btn.btn-link {
+    padding-left: 0;
+}
+
+.spcUpDown {
+    margin: 10px 0 10px 0
+}
+
+.card {
+    border: none;
+    margin-bottom: 1px;
+}
+
+.btn-link {
+    width: 100%;
+}
+
+.btn-link {
+    color: white;
+}
+
+.blu {
+    color: #6F91C8;
+}
+
+.btn-link:hover {
+    color: white;
+}
+
+.custPad {
+    padding: 0;
+    padding-right: 5px;
+}
+
+.zero {
+    margin: 0
+}
+
+.stripColor {
+    padding-bottom: 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.floatLeft ul {
+    padding: 0;
+}
+
+.color_white {
+    color: white !important
+}

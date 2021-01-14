@@ -1,0 +1,342 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/wall-of-champions']">Wipo Match Community</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <h1 class="titlePadding">Wipo Match Community</h1>
+</div>
+<div id="demo" class="container carousel slide" data-ride="carousel">
+    <div class="row">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:0:12; let i = index">
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:12:24; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:24:36; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:36:48; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:48:60; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:60:72; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:72:84; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:84:96; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 wallShadowEffect mb-5" *ngFor="let imageData of championsImageData.data | keyvalue | slice:96:108; let i = index">
+
+                            <div *ngIf="i == 4 || i==6; else elseBlock">
+                                <a href="{{imageData.value.href}}" target="_blank">
+                                    <img src={{imageData.value.src}} class="frame1">
+                                </a>
+                            </div>
+
+                            <ng-template #elseBlock>
+                                <div *ngIf="i == 5 || i==7 ; else elseBlock2">
+                                    <a href="{{imageData.value.href}}" target="_blank">
+                                        <img src={{imageData.value.src}} class="frame">
+                                    </a>
+                                </div>
+                                <ng-template #elseBlock2>
+                                    <div *ngIf="i%2 == 0 ; else elseBlock3">
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame">
+                                        </a>
+                                    </div>
+                                    <ng-template #elseBlock3>
+                                        <a href="{{imageData.value.href}}" target="_blank">
+                                            <img src={{imageData.value.src}} class="frame1">
+                                        </a>
+                                    </ng-template>
+                                </ng-template>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev carousel-control" href="#demo" data-slide="prev">
+            <img src="assets/images/prev.png" />
+        </a>
+        <a class="carousel-control-next carousel-control" href="#demo" data-slide="next">
+            <img src="assets/images/next.png" />
+        </a>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/donors']">{{ 'breadcrum.donors' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/view-offer']">{{ 'breadcrum.viewOffer' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <h1 class="titlePadding">{{ 'breadcrum.viewOffer' | translate }}</h1>
+    <ng4-loading-spinner></ng4-loading-spinner>
+</div>
+<div class="container">
+
+    <div class="column left">
+        <div class="org_logo">
+            <div class=" component-logo logoImg">
+                <img width="120px" src="{{companylogo}}">
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="box__header" *ngIf="offer.country!=null">{{ 'viewOffer.COUNTRIES' | translate }}</h3>
+            <ul class="circle">
+                <li *ngFor="let country of offer.country">{{country}}</li>
+            </ul>
+            <hr class="hrborder" *ngIf="offer.country!=null">
+            <h3 class="box__header" *ngIf="offer.ipFielddesc!=null">{{ 'viewOffer.IP-FIELDS' | translate }}</h3>
+            <ul class="circle">
+                <li *ngFor="let ipfield of offer.ipFielddesc"> {{ipfield}}</li>
+            </ul>
+            <hr class="hrborder" *ngIf="offer.ipFielddesc!=null">
+            <h3 class="box__header" *ngIf="offer.sDGDesc!=null">{{ 'viewOffer.SDG' | translate }}</h3>
+            <ul class="circle">
+                <li *ngFor="let sdeg of offer.sDGDesc">{{sdeg}}</li>
+            </ul>
+            <hr class="hrborder" *ngIf="offer.sDGDesc!=null">
+            <h3 class="box__header" *ngIf="offer.technicalFieldDesc.length">{{ 'viewOffer.TECHNICAL-FIELDS' | translate }}</h3>
+            <ul class="circle">
+                <li *ngFor="let tfields of offer.technicalFieldDesc">{{tfields}} </li>
+            </ul>
+            <hr class="hrborder" *ngIf="offer.technicalFieldDesc.length">
+            <h3 class="box__header" *ngIf="offer.subtechnicalFieldDesc!=null">{{ 'viewOffer.SUB-TECHNICAL-FIELDS' | translate }}</h3>
+            <ul class="circle">
+                <li *ngFor="let stfields of offer.subtechnicalFieldDesc">{{stfields}} </li>
+            </ul>
+            <hr class="hrborder" *ngIf="offer.subtechnicalFieldDesc!=null">
+            <h3 class="box__header" *ngIf="offer.technicalAssistanceDesc!=null">{{ 'viewOffer.TECHNICAL-ASSISTANCE' | translate }}</h3>
+            <ul class="circle">
+                <li *ngFor="let tassist of offer.technicalAssistanceDesc">{{tassist}} </li>
+            </ul>
+        </div>
+    </div>
+    <div class="column right">
+        <h1>{{offertitle}}</h1>
+        <div class="row">
+            <div class="col-7 summarytitle">
+                <h2>{{ 'viewOffer.Summary-of-the-Proposal' | translate }}</h2>
+            </div>
+            <div class="col-5 btnDiv ">
+                <a class="btn call-to-action" href="https://www3.wipo.int/match/secure/seeker-need-form/4"  title="">{{ 'viewOffer.RESPOND-TO-THIS-OFFER' | translate }}</a>
+            </div>
+        </div>
+        <div class="detail" [innerHTML]="offer.summaryOfProposal"></div>
+        <h2 class="heading">{{ 'viewOffer.iOffer' | translate }}</h2>
+        <div class="detail" [innerHTML]="offer.whatDoINeed"></div>
+        <h2 class="heading">{{ 'viewOffer.partner' | translate }}</h2>
+        <div class="detail" [innerHTML]="offer.patnerWith"></div>
+        <h2 class="heading"> {{ 'viewOffer.proImage' | translate }}</h2>
+        <div class="content cols u-text-center">
+            <img src="{{projectImage}}" style="width: 250px !important;" title="Image Not Found">
+        </div>
+    </div>
+</div>

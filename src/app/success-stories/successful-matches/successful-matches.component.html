@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/successful-matches']">{{ 'breadcrum.Successful-Matches' | translate }}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <h1 class="pageHeadingName">{{ 'Successful-Matches.Wipo-Matched' | translate }}</h1>
+</div>
+<div class="container" *ngIf="(matchList.data?.length && !loader)">
+    <div class="row mb-3" *ngFor="let match of matchList.data | paginate: config">
+        <div class="colWidth1">
+            <div class="card">
+                <div class="card-body matchLogoAlign">
+                    <img (click)="websiteOld(match)" class="card-img-top matchImg" src={{match.imageOld}} alt="Not Found" onerror="this.src='assets/images/defaultImg.png';">
+                    <h3 class="card-title titleStyle">{{match.titleOld}}</h3>
+                    <a href="{{match.websiteOld}}" class="color"> <b>{{'supportersList.Website' | translate}} : </b><span class="colorLink">{{match.websiteOld}}</span></a>
+                </div>
+            </div>
+        </div>
+        <img class="arrowStyleRight" src='assets/images/right-arrow.png' alt="Not Found" onerror="this.src='assets/images/No-photo-big.jpg';">
+        <img class="arrowStyleDown" src='assets/images/down_arrow.png' alt="Not Found" onerror="this.src='assets/images/No-photo-big.jpg';">
+        <div class="colWidth2">
+            <div class="card">
+                <div class="card-body matchLogoAlign">
+                    <img (click)="websiteNew(match)" class="card-img-top matchImg" src={{match.imageNew}} alt="Not Found" onerror="this.src='assets/images/defaultImg.png';">
+                    <h3 class="card-title titleStyle">{{match.titleNew}}</h3>
+                    <a href="{{match.websiteNew}}" class="color"> <b>{{'supportersList.Website' | translate}} : </b><span class="colorLink">{{match.websiteNew}}</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" *ngIf="(matchList.data?.length && !loader);">
+    <div class="example pull-right paginationcontrol">
+        <nav aria-label="Demo of active current page number">
+            <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+        </nav>
+    </div>
+</div>

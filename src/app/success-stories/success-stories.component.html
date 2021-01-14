@@ -1,0 +1,452 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/success-stories']">{{ 'breadcrum.success-stories' | translate }}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <h1 class="success">{{ 'title.success-stories' | translate }}
+        <a class="btn call-to-action floatR" [routerLink]="['/successful-matches']" title="">{{'success.successful-matches' | translate}}</a></h1>
+
+</div>
+<div class="container">
+    <div class="Carouselregion">
+        <div class="CardTitle">{{'success.testimonials' | translate}}</div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/francis_gurry_600_340.jpg" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.testimonials.text1' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.testimonials.bottom1' | translate}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/under_secretary.jpg" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.testimonials.text2' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.testimonials.bottom2' | translate}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/DG_Aripo.png" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.testimonials.text3' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.testimonials.bottom3' | translate}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/chiefExecutiveUK.jpg" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.testimonials.text4' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.testimonials.bottom4' | translate}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/Mr. Sung yunmo.jpg" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3">
+                                    <p class="card-text">"{{'success.testimonials.text5' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.testimonials.bottom5' | translate}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/SwissGreen.jpg" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3">
+                                    <p class="card-text">"{{'success.testimonials.text6' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.testimonials.bottom6' | translate}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+            <a class="carousel-control-prev carousel-control" href="#myCarousel" data-slide="prev">
+                <img src="assets/images/prev.png" />
+            </a>
+            <a class="carousel-control-next carousel-control" href="#myCarousel" data-slide="next">
+                <img src="assets/images/next.png" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container margin">
+    <div class="Carouselregion">
+        <div class="CardTitle">{{'success.Publications' | translate}}</div>
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                <li data-target="#myCarousel1" data-slide-to="3"></li>
+                <li data-target="#myCarousel1" data-slide-to="4"></li>
+                <li data-target="#myCarousel1" data-slide-to="5"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/Ms.MariaZarraga.PNG" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text1' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom1' | translate}}
+                                    </p>
+                                    <a (click)="openPDF(0)" class="card-text-bottom readmore">{{'success.readMore' | translate}} </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/PresidentTurkishPatentOffice.PNG" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text2' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom2' | translate}} </p>
+                                    <a (click)="openPDF(1)" class="card-text-bottom readmore"> {{'success.readMore' | translate}}  </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/Ms.PacyinzLyfoungPIIPAandNigeriaproject.PNG" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text3' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom3' | translate}}</p>
+                                    <a (click)="openPDF(2)" class="card-text-bottom readmore"> {{'success.readMore' | translate}} </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/Juan.jpg" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text4' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom4' | translate}}
+                                    </p>
+                                    <a (click)="openPDF(3)" class="card-text-bottom readmore">{{'success.readMore' | translate}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/SmartPatentArticleForWIPOcopy.PNG" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text5' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom5' | translate}}
+                                    </p>
+                                    <a (click)="openPDF(4)" class="card-text-bottom readmore">{{'success.readMore' | translate}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/cordobaNew.png" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text6' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom6' | translate}}
+                                    </p>
+                                    <a (click)="openPDF(5)" class="card-text-bottom readmore">{{'success.readMore' | translate}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/SarasijaNew.JPG" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text7' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom7' | translate}}
+                                    </p>
+                                    <a (click)="openPDF(6)" class="card-text-bottom readmore">{{'success.readMore' | translate}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/images/FAST.jfif" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"{{'success.publications.text8' | translate}}"
+                                    </p>
+                                    <p class="card-text-bottom">{{'success.publications.bottom8' | translate}}
+                                    </p>
+                                    <a (click)="openPDF(13)" class="card-text-bottom readmore">{{'success.readMore' | translate}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="carousel-item ">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-3 clientImg">
+                                <img src="assets/Wall-Logo/wipom.png" class="TestimonialImg">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                <div class="card-block px-3 txtBlock">
+                                    <p class="card-text">"WIPO Match: financing innovation to leverage IP for development</p>
+                                    <p class="card-text"> In the age of global knowledge economy, information overload and limited time, how can countries, organizations and innovators find the correct partners to help finance their innovation initiatives? Serving as a facilitator
+                                        of cooperation, WIPO Match is a free online tool that can reduce time and effort in searching for appropriate partners to initiate, execute and accelerate innovation-driven projects, with intellectual property management
+                                        as a core element of success."
+                                    </p>
+                                    <p class="card-text-bottom">— Compiled by Mary Hayrapetyan
+                                    </p>
+                                    <a (click)="openPDF(7)" class="card-text-bottom readmore">{{'success.readMore' | translate}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev carousel-control" href="#myCarousel1" data-slide="prev">
+                <img src="assets/images/prev.png" />
+            </a>
+            <a class="carousel-control-next carousel-control" href="#myCarousel1" data-slide="next">
+                <img src="assets/images/next.png" />
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <div class="margin Carouselregion">
+        <div class="row ">
+            <div class="col-md-12 col-sm-12">
+                <div class="CardTitle">Resources</div>
+                <div class="column cardview">
+                    <div class="card CardSeeker" (click)="openPDF(8)">
+                        <div class="card-body">
+                            <div id="Documents"></div>
+                            <h4 class="card-title">Successful Matches</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="column cardview">
+                    <div class="CardTitle"></div>
+                    <div class="card CardDonor" [routerLink]="['/videos']">
+                        <div class="card-body">
+                            <div id="Videos"></div>
+                            <h4 class="card-title">Videos</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="column cardview">
+                    <div class="CardTitle"></div>
+                    <div class="card CardSupporter" [routerLink]="['/brochure']">
+                        <div class="card-body">
+                            <div id="Browcher"></div>
+                            <h4 class="card-title">Article</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="column cardview">
+                    <div class="CardTitle"></div>
+                    <div class="card CardSupporter" [routerLink]="['/project-guidelines']">
+                        <div class="card-body">
+                            <div id="Guidelines"></div>
+                            <h4 class="card-title">Project Guidelines</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="column cardview">
+                    <div class="CardTitle"></div>
+                    <div class="card CardSupporter" (click)="openPDF(12)">
+                        <div class="card-body">
+                            <div id="Events"></div>
+                            <h4 class="card-title">Upcoming Wipo Match events</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container margin">
+    <div class="Carouselregion">
+        <div class="CardTitle">Successful-Matches</div>
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                <li data-target="#myCarousel1" data-slide-to="3"></li>
+                <li data-target="#myCarousel1" data-slide-to="4"></li>
+                <li data-target="#myCarousel1" data-slide-to="5"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row mb-3">
+                        <div class="colWidth1">
+                            <div class="card-body matchLogoAlign">
+                                <img class="card-img-top matchImg" src='assets/images/defaultLogo.jpg' alt="Not Found" onerror="this.src='assets/images/defaultLogo.jpg';">
+                                <h3 class="card-title ">Title Here</h3>
+                            </div>
+                        </div>
+                        <img class="arrowStyleRight" src='assets/images/right-arrow.png' alt="Not Found" onerror="this.src='assets/images/No-photo-big.jpg';">
+                        <img class="arrowStyleDown" src='assets/images/down_arrow.png' alt="Not Found" onerror="this.src='assets/images/No-photo-big.jpg';">
+                        <div class="colWidth2">
+                            <div class="card-body matchLogoAlign">
+                                <img class="card-img-top matchImg" src='assets/images/defaultLogo.jpg' alt="Not Found" onerror="this.src='assets/images/defaultLogo.jpg';">
+                                <h3 class="card-title ">Title Here</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev carousel-control" href="#myCarousel1" data-slide="prev">
+                <img src="assets/images/prev.png" />
+            </a>
+            <a class="carousel-control-next carousel-control" href="#myCarousel1" data-slide="next">
+                <img src="assets/images/next.png" />
+            </a>
+        </div>
+    </div>
+</div> -->

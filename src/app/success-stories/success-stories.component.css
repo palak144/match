@@ -1,0 +1,416 @@
+.carousel-control {
+    width: auto;
+}
+
+
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400"; */
+
+body,
+.badgescard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.card {
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border: none
+}
+
+
+/* 
+.card:after {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+} */
+
+.badgescard {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #ECECEC;
+    width: 480px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+
+.badgescard span {
+    font-size: 1.6em;
+    margin: 0px 6px;
+    opacity: 0.6;
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+
+.clientImg {
+    text-align: center
+}
+
+.col-md-3.clientImg {
+    padding-left: 49px !important;
+}
+
+.Carouselregion {
+    padding: 10px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    margin-bottom: 100px;
+}
+
+#myCarousel {
+    width: 98%;
+}
+
+.TestimonialImg {
+    width: 300px;
+    height: 300px;
+    max-width: 200px;
+    max-height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 8px solid white;
+    margin-left: 0;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+@media (max-width: 767px) {
+    .TestimonialImg {
+        margin-left: 10px;
+    }
+}
+
+.card-text-bottom {
+    color: #405176;
+    font-weight: 600;
+    text-align: left;
+}
+
+.card-text {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.txtBlock {
+    padding-top: 5%;
+    padding-right: 2rem!important;
+    padding-left: 0 !important;
+}
+
+.CardTitle {
+    font-size: 100%;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.CardTitleR {
+    font-size: 100%;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.carousel-control-next-icon:after {
+    font-size: 33px;
+    color: #4050F6 !important;
+}
+
+.carousel-control-prev-icon:after {
+    font-size: 33px;
+    color: #4050F6 !important;
+}
+
+.readmore {
+    color: #6F91C8 !important;
+    float: right;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.readmore:hover {
+    text-decoration: underline !important;
+}
+
+.margin {
+    margin-top: -50px;
+}
+
+.floatR {
+    float: right;
+}
+
+
+/*------------------------------------
+    successful-matches
+------------------------------------*/
+
+.color {
+    color: black !important;
+}
+
+.matchImg {
+    max-width: 255px;
+    min-height: 130px;
+    max-height: 130px;
+    border: 8px solid white;
+    margin-left: 0;
+    text-align: center;
+}
+
+.matchLogoAlign {
+    text-align: center !important;
+}
+
+.colorLink {
+    color: #0000FF !important
+}
+
+.arrowStyleRight {
+    max-height: 50px;
+    margin-top: 63px;
+}
+
+.arrowStyleDown {
+    max-height: 50px;
+    display: none
+}
+
+.titleStyle {
+    min-height: 75px !important
+}
+
+.colWidth1 {
+    width: 46%;
+    margin-left: 18px;
+    padding-right: 10px;
+}
+
+.colWidth2 {
+    width: 46%;
+    padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .arrowStyleDown {
+        max-height: 50px;
+        margin-left: 45%;
+        display: block
+    }
+    .arrowStyleRight {
+        max-height: 50px;
+        margin-top: 90px;
+        display: none;
+    }
+    .colWidth1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+    .colWidth2 {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+/*------------------------------------
+           Card View 
+------------------------------------*/
+
+
+/* Float four columns side by side */
+
+.col-md-12.col-sm-12.offersAndNeedsRegionH1 {
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 23px;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.column.cardview {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media (max-width: 600px) {
+    .column.cardview {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .col-sm-2.col-xs-12.salientFeatureWipoText1 span {
+        float: none;
+        color: black;
+    }
+}
+
+#Guidelines {
+    background: url('src/assets/images/Document_D-01.png') no-repeat 46% 0;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 8%;
+}
+
+.column.cardview:hover #Guidelines {
+    background: url('src/assets/images/Document_A-01.png') no-repeat 46% 0;
+}
+
+#Documents {
+    background: url('src/assets/images/Achievement_d.svg') no-repeat 46% 0;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 8%;
+}
+
+.column.cardview:hover #Documents {
+    background: url('src/assets/images/Achievement_a.svg') no-repeat 46% 0;
+}
+
+#Videos {
+    background: url('src/assets/images/Video_D-01.png') no-repeat 46% 0;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 8%;
+}
+
+.column.cardview:hover #Videos {
+    background: url('src/assets/images/Video_A-01.png') no-repeat 46% 0;
+}
+
+#Browcher {
+    background: url('src/assets/images/Brochure_D-01.png') no-repeat 46% 0;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 8%;
+}
+
+.column.cardview:hover #Browcher {
+    background: url('src/assets/images/Brochure_A-01.png') no-repeat 46% 0;
+}
+
+#Events {
+    background: url('src/assets/images/upcomingEvents_d-01.svg') no-repeat 46% 0;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 8%;
+}
+
+.column.cardview:hover #Events {
+    background: url('src/assets/images/upcomingEvents_a-01.svg') no-repeat 46% 0;
+}
+
+.card {
+    background-color: #fff;
+    background-position-x: center;
+    padding: 15px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #314668;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #6F91C8;
+    font-weight: bold;
+    margin-top: .75rem;
+    text-align: center;
+}
+
+.card-title:hover {
+    text-decoration: underline !important
+}
+
+.card-body {
+    flex: 1 1 auto;
+}
+
+@media screen and (max-width: 375px) {
+    .column.title {
+        font-size: 16px;
+        color: #314668;
+        font-weight: bold;
+        margin-bottom: 15px
+    }
+    .col-sm-2.col-xs-12.salientFeatureWipoText1 span {
+        float: none;
+        color: black;
+    }
+}

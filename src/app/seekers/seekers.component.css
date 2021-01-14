@@ -1,0 +1,57 @@
+.needslist {
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 0 !important;
+}
+
+.paginationcontrol {
+    margin-top: 22px;
+    font-size: 13px;
+}
+
+.needid {
+    margin-bottom: 0.35em;
+    font-size: 16px !important;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.need_desc {
+    font-size: 14px;
+}
+
+.needcount {
+    font-size: 23px !important;
+}
+
+.imgLink {
+    cursor: pointer !important;
+}
+
+h3 a {
+    text-transform: uppercase !important;
+}
+
+@media(max-width :568px) {
+    .logoImg {
+        padding: 0px !important;
+        margin-bottom: 15px !important;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.noRecord {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px
+}
+
+.link {
+    color: #6F91C8! important;
+    cursor: pointer!important;
+    background-color: transparent;
+}
+
+.link:hover {
+    text-decoration: underline! important;
+}

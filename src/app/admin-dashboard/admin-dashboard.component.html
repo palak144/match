@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/admin-dashboard']">Admin Dashboard</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container ">
+    <h1 class="titlePaddingAdmin">WIPO Match - Welcome to IP-DMD</h1>
+</div>
+<div class="container margin100">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="col-md-12 divHead">Latest Unprocess Application:</div>
+            <div class="col-md-12 heightFixed " style="border: 1px solid">
+                <table class="table">
+                    <div class="scrollExt">
+                        <tbody>
+                            <tr *ngFor="let item of unprocessApplication ;let i = index;">
+                                <td *ngIf="i < 3">" {{item.typeIdDesc}} " by: {{item.firstName}} {{item.lastName}} on : {{item.createTimeStamp | date:'short'}} for project : <a>" {{item.eoiRequestTitle}} "</a></td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+                <div class="alighRight">
+                    <a [routerLink]="['/admin-applications',0,0]">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <div class="col-md-12 divHead">Overview:</div>
+                <div class="col-md-12 heightFixed paddingStyles" style="border: 1px solid"> Coming soon... </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-12 divHead">Statistic:</div>
+            <div class="col-md-12 heightFixed" style="border: 1px solid">
+                <table class="table">
+                    <tbody *ngIf="(statisticData | json) != ({} | json)">
+                        <tr>
+                            <td colspan="6" class="thHead">Total Offers:</td>
+                            <td><b>{{statisticData?.totalOffers}}</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="alighRight">Published Offers:</td>
+                            <td>{{statisticData?.publishedOffer}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="alighRight">Responses Offers:</td>
+                            <td>{{statisticData?.respondToOffer}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="thHead">Total Needs:</td>
+                            <td><b>{{statisticData?.totalNeeds}}</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="alighRight">Published Needs:</td>
+                            <td>{{statisticData?.publishedNeeds}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="alighRight">Responses Needs:</td>
+                            <td>{{statisticData?.respondToNeed}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Offers</b> : </td>
+                            <td colspan="5">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" id="offerCount" [style.width.%]="statisticData?.totalOffers" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Needs</b> : </td>
+                            <td colspan="5">
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" id="needCount" [style.width.%]="statisticData?.totalNeeds" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/admin-applications/0/0']">Applications</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <h1 class="titlePadding">WIPO Match - Welcome to IP-DMD</h1>
+</div>
+<div class="container div.container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <tabset (click)="switchTab(tabset)" #tabset>
+        <tab tab1 (onSelect)="onTabSelect(1)" heading="View Unprocessed Application" id="first" class="tabHeading" #first [disabled]="tabVisible1">
+            <app-admin-unprocessed-application [disabletab]="tabset"></app-admin-unprocessed-application>
+        </tab>
+        <tab tab2 (onSelect)="onTabSelect(2)" [disabled]="tabVisible2" heading="Approve Application" id="second" class="tabHeading" #second [disabled]="tabVisible2">
+            <app-admin-approved-application></app-admin-approved-application>
+        </tab>
+        <tab tab3 (click)="onTabSelect(3)" heading="Process Application" id="third" #third [disabled]="tabVisible3">
+            <app-admin-processed-application></app-admin-processed-application>
+        </tab>
+        <tab tab4 (onSelect)="onTabSelect(4)" heading="Published Application" id="fourth" #fourth [disabled]="tabVisible4">
+            <app-admin-published-application></app-admin-published-application>
+        </tab>
+    </tabset>
+</div>

@@ -1,0 +1,54 @@
+.supporterTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+label {
+    font-weight: normal !important;
+}
+
+.SubmitBtn {
+    background-color: #405176;
+    border: 1px solid #374665;
+    border-bottom-color: #374665;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.image-upload {
+    padding: 10px 0;
+}
+
+.txtBox {
+    height: 60px;
+}
+
+.submitBtn {
+    text-align: -webkit-right;
+    padding-bottom: 20px;
+}
+
+.ImgIcon {
+    width: 100px;
+    height: 70px
+}
+
+.dropDownList {
+    width: -webkit-fill-available;
+    height: 38px;
+}
+
+.txtbox {
+    width: 100%;
+}
+
+.errors {
+    display: block;
+    width: 100%;
+    font-size: 80%;
+    color: #dc3545;
+    margin-top: 0px;
+    padding-top: 3px;
+}

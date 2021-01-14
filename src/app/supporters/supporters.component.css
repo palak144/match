@@ -1,0 +1,13 @@
+.container {
+    max-width: 65em !important
+}
+
+.SubmitBtn {
+    background-color: #405176;
+    border: 1px solid #374665;
+    border-bottom-color: #374665;
+}
+
+.floatR {
+    float: right;
+}

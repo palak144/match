@@ -1,0 +1,24 @@
+<div class="container tab-padding">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <div class="row pd-to-20">
+        <p class="table-heading">Process Applications</p>
+    </div>
+    <div class="row">
+        <table class="table">
+            <tr class="th-header">
+                <th scope="col" style="width: 8%;">EOI Id</th>
+                <th scope="col" style="width: 70%;">Offers/Needs</th>
+                <th scope="col" style="width: 42%;min-width: 150px;">Actions</th>
+            </tr>
+            <tbody class="table-striped">
+                <tr *ngFor="let item of processApplicationList">
+                    <td>{{item.requestId}}
+                        <td>{{item.requestTitle}} </td>
+                        <td class="actionClm"><button class="btn call-to-action" (click)="processApplication(item.requestId,'publish', item.applicantRefId)">Publish</button>
+                            <button class="btn call-to-action" (click)="processApplication(item.requestId,'delete', item.applicantRefId)">Delete</button>
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

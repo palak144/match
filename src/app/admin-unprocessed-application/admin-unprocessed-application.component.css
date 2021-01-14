@@ -1,0 +1,112 @@
+ .floar-right {
+     float: right;
+ }
+ 
+ .th-header {
+     background: #314668;
+     color: white;
+ }
+ 
+ .tab-padding {
+     padding-top: 15px;
+ }
+ 
+ th,
+ td {
+     padding: 8px 16px !important;
+     text-align: left;
+ }
+ 
+ .pd-to-20 {
+     padding-top: 45px;
+     padding-bottom: 15px;
+ }
+ 
+ .pad-right {
+     padding-left: 20px;
+ }
+ 
+ .paginationcontrol {
+     margin-top: 22px;
+     font-size: 13px;
+ }
+ 
+ .links {
+     color: #6F91C8 !important;
+     text-decoration: underline !important;
+     background-color: transparent;
+     cursor: pointer !important;
+ }
+ 
+ .linkDiv {
+     height: 200px;
+     overflow-y: scroll;
+ }
+ 
+ .table-heading {
+     font-weight: bold;
+     margin-bottom: 0px !important;
+     font-size: 23px;
+ }
+ 
+ table {
+     font-size: 14px !important;
+ }
+ 
+ .table-striped tr:nth-child(odd) td,
+ .table-striped tr:nth-child(odd) th {
+     background-color: #F3F3F3;
+ }
+ 
+ .table thead th {
+     vertical-align: bottom;
+     border: 1px solid #ccc;
+ }
+ 
+ .table th {
+     font-weight: bold;
+ }
+ 
+ .pointer {
+     cursor: pointer
+ }
+ 
+ .resposiveTbl td strong {
+     display: none;
+     width: 100%;
+ }
+ 
+ @media (max-width:767px) {
+     .resposiveTbl tbody tr {
+         float: none;
+         display: block;
+         /*border-bottom: 1px solid #ccc;*/
+         padding-bottom: 15px;
+     }
+     .th-header {
+         display: none !important;
+     }
+     .resposiveTbl td strong {
+         display: inline-block;
+     }
+     .resposiveTbl td {
+         display: block;
+         text-align: left;
+     }
+     .resposiveTbl td p {
+         display: inline-block;
+         width: 55%;
+     }
+     .resposiveTbl td.textRight {
+         text-align: left;
+     }
+     .resposiveTbl tbody tr {
+         padding-bottom: 30px;
+     }
+ }
+ 
+ .table-heading {
+     font-weight: bold;
+     margin-bottom: 0px !important;
+     font-size: 23px;
+ }

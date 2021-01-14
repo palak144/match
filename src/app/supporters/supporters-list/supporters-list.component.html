@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row breadcrum-container">
+        <ul class="col-sm-12">
+            <li>
+                <a href="https://www.wipo.int/portal/en/" target="_blank">{{ 'breadcrum.home' | translate }}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a href="https://www.wipo.int/cooperation/en/" target="_blank">{{ 'breadcrum.Cooperation' | translate}}</a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right"></li>
+            <li>
+                <a [routerLink]="['/home']">{{ 'breadcrum.WIPO_Match' | translate }} </a>
+            </li>
+            <li style="margin : 2px 9px 0 9px" class="fa fa-angle-right">
+            </li>
+            <li>
+                <a [routerLink]="['/supporters']">{{ 'breadcrum.supportersList' | translate }}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <ng4-loading-spinner></ng4-loading-spinner>
+    <h1 class="pageHeadingName">{{ 'breadcrum.supportersList' | translate }}</h1>
+</div>
+<div class="container ">
+    <h2 class="title">{{'supportersList.para' | translate}} {{suppCount}} {{'supportersList.para1' | translate}}</h2>
+</div>
+<div class="container" *ngIf="(supporterList.data?.length && !loader)">
+    <div class="card p-3 mb-3" *ngFor="let supporterList of supporterList.data | paginate: config">
+        <div class="row">
+            <div class="col-sm-3 suppLogoAlign">
+                <img (click)="suppWebsite(supporterList)" class="card-img-top SuppImg" src={{supporterList.suppLogo}} alt="Not Found" onerror="this.src='assets/images/No-photo-big.jpg';">
+            </div>
+            <div class="col-sm-9 p-0 supporterDetails">
+                <h2 class="card-title ">{{supporterList.suppOrgName}}</h2>
+                <h6 class="card-subtitle pb-3"><span><b>{{'supportersList.Category' | translate}} : </b></span>{{supporterList.suppOrgTypeDesc}}</h6>
+                <h6 class="card-subtitle pb-2"><span><b>{{'supportersList.Country' | translate}} : </b></span>{{supporterList.suppcountryName}}</h6>
+                <a href="{{supporterList.suppWebAdd}}" target="_blank" class="color"> <b>{{'supportersList.Website' | translate}} : </b><span class="colorLink">{{supporterList.suppWebAdd}}</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" *ngIf="(supporterList.data?.length && !loader); ">
+    <div class="example pull-right paginationcontrol">
+        <nav aria-label="Demo of active current page number">
+            <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+        </nav>
+    </div>
+</div>

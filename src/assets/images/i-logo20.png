@@ -1,0 +1,612 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head><title>WIPO &#45; World Intellectual Property Organization</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en">
+<meta name="description" content="The world’s number one source for global intellectual property (patents, industrial designs, copyright, trademarks etc.) information, resources, and services."><meta name="keywords" content="ip, intellectual property, patents, trademarks, global ip, invention protection, copyright, creations of mind, industrial property"><meta property="og:image" content="https://www.wipo.int/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo-wipo.png" /><meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.wipo.int/portal/en/index.html" /><link rel="shortcut icon" type="image/x-icon" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/favicon/apple-touch-icon-180x180.png">
+<link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#314668"><meta name="msapplication-TileColor" content="#75839a"><meta name="theme-color" content="#75839a">
+<link href="/portal/en/rss" type="application/rss+xml" rel="alternate" title="WIPO News"/><link rel="stylesheet" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/css/styles2016.css">
+<link rel="stylesheet" href="/export/system/modules/org.wipo.internet.rwd.templates/resources/webfonts/ss-standard.css">
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src='/export/system/modules/org.wipo.internet.rwd.templates/resources/scripts/selectivizr-min.js'></script>
+<link rel='stylesheet' href='/export/system/modules/org.wipo.internet.rwd.templates/resources/css/lte-ie8.css'>
+<![endif]-->
+<script src="/export/system/modules/org.wipo.internet.rwd.templates/resources/scripts/modernizr-2.6.2-min.js"></script>
+<script src="/export/system/modules/org.wipo.internet.rwd.templates/resources/scripts/jquery-min.js"></script>
+
+<script src="/shared/scripts/wipo-portal-infocus.js" type="text/javascript"></script>
+<script src="/portal/en/includes/patentscope.js" type="text/javascript"></script>
+<script src="/portal/en/includes/branddb.js" type="text/javascript"></script>
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "WIPO - World Intellectual Property Organization",
+  "url" : "https://www.wipo.int",
+  "sameAs" : [
+    "https://www.facebook.com/worldipday",
+    "http://www.twitter.com/wipo",
+	"https://www.linkedin.com/company/wipo",
+    "http://www.youtube.com/wipo",
+    "http://www.flickr.com/photos/wipo/collections"
+  ]
+}
+</script>
+<link rel="stylesheet" href="/portal/en/includes/portal.css"><script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:787562,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P7RLS2');</script>
+<!-- End Google Tag Manager --></head>
+<body class="theme theme--blue" id="wipo-int"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7RLS2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="container printOnly"><img alt="WIPO" id="printLogo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/header-logo-wipo.svg"></div>
+<header role="banner">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo__wipo-picture-mark.svg" alt="WIPO picture mark" class="banner__wipo-mark m-hide">
+<div class="container"><a href="/portal/en/">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo__wipo-word-mark.svg" alt="WIPO logo" class="banner__logo m-hide">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo__wipo-word-mark-no-subtitle.svg" alt="WIPO logo" class="banner__logo t-hide d-hide">
+</a>
+</div>
+</header>
+<nav class="navigation">
+<a href="#" class="navigation-toggle ss-icon" title="Open the menu" aria-label="Menu">rows</a>
+<a href="#" class="search-toggle ss-icon d-hide" title="Search" aria-label="Search">search</a><div class="container">
+<ul class="navigation__flyout"><li class="flyout-control selected">
+<a class="m-hide" href="/services/en/">IP Services</a>
+<input type="checkbox" id="services" class="m-flyout-control__checkbox | t-hide d-hide" name="m-flyout-control__checkbox" />
+<label for="services" class="m-flyout-control__label | t-hide d-hide">IP Services</label><div class="flyout" aria-expanded="false"><div class="nav-group nav-group--three"><div class="nav nav--one">
+<h3 class="flyout__header">Protecting IP</h3>
+<ul class="flyout__list"><li><a href="/pct/en/">PCT - The International Patent System</a></li><li><a href="/madrid/en/">Madrid - The International Trademark System</a></li><li><a href="/hague/en/">Hague - The International Design System</a></li><li><a href="/lisbon/en/">Lisbon - The International System of Appellations of Origin</a></li><li><a href="/budapest/en/">Budapest - The International Microorganism Deposit System</a></li><li><a href="/article6ter/en/">Article 6ter</a></li>
+</ul><h3 class="flyout__header">Resolving Disputes</h3>
+<ul class="flyout__list"><li><a href="/amc/en/">Alternative Dispute Resolution</a></li><li><a href="/amc/en/domains/">Domain Name Disputes</a></li>
+</ul></div><div class="nav nav--two">
+
+<h3 class="flyout__header">Paying for IP Services</h3>
+<ul class="flyout__list">
+<li><a href="/finance/en/">How to Pay</a></li>
+</ul>
+
+<h3 class="flyout__header">IP Portal</h3>
+<ul class="flyout__list">
+<li><a href="https://ipportal.wipo.int">One-stop shop for online IP services</a></li></ul>
+</div>
+
+
+
+</div>
+<p class="flyout__span d-hide"><a class="btn btn-info" href="/services/en/">All IP Services</a></p></div></li><li class="flyout-control">
+<a class="m-hide" href="/policy/en/">Policy</a>
+<input type="checkbox" id="policy" class="m-flyout-control__checkbox | t-hide d-hide" name="m-flyout-control__checkbox" />
+<label for="policy" class="m-flyout-control__label | t-hide d-hide">Policy</label><div class="flyout" aria-expanded="false"><div class="nav-group nav-group--two"><div class="nav nav--one">
+<h3 class="flyout__header">Decision Making & Negotiating Bodies</h3>
+<ul class="flyout__list"><li><a href="/about-wipo/en/assemblies/">WIPO Assemblies</a></li><li><a href="/policy/en/sccr/">SCCR - Standing Committee on Copyright and Related Rights</a></li><li><a href="/policy/en/scp/">SCP - Standing Committee on the Law of Patents</a></li><li><a href="/policy/en/sct/">SCT - Standing Committee on the Law of Trademarks</a></li><li><a href="/tk/en/igc/">IGC - Intergovernmental Committee on IP & GR, TK & Folklore</a></li><li><a href="/policy/en/cdip/">CDIP - Committee on Development and IP</a></li><li><a href="/cws/en/">CWS - Committee on WIPO Standards</a></li><li><a href="/enforcement/en/ace/">ACE - Advisory Committee on Enforcement</a></li><li><a href="/policy/en/index.html#bodies">All Decision Making & Negotiating Bodies</a></li>
+</ul></div><div class="nav nav--two">
+<h3 class="flyout__header">IP &amp; Other Policy Topics</h3>
+<ul class="flyout__list"><li><a href="/sdgs/">Sustainable Development Goals</a></li><li><a href="/tk/en/">Traditional Knowledge</a></li><li><a href="/econ_stat/en/economics/">Economics</a></li><li><a href="/policy/en/global_health/">Global Health</a></li><li><a href="/policy/en/climate_change/">Climate Change</a></li><li><a href="/ip-competition/en/">Competition Policy</a></li>
+</ul></div></div>
+<p class="flyout__span d-hide"><a class="btn btn-info" href="/policy/en/">All policy</a></p></div></li>
+<li class="flyout-control">
+<a class="m-hide" href="/cooperation/en/">Cooperation</a>
+<input type="checkbox" id="cooperation" class="m-flyout-control__checkbox | t-hide d-hide" name="m-flyout-control__checkbox" />
+<label for="cooperation" class="m-flyout-control__label | t-hide d-hide">Cooperation</label><div class="flyout" aria-expanded="false"><div class="nav-group nav-group--three">
+<div class="nav nav--one">
+<h3 class="flyout__header">Development Cooperation</h3>
+<ul class="flyout__list"><li><a href="/ip-development/en/agenda/">Development Agenda</a></li><li><a href="/cooperation/en/technical_assistance/">Technical Assistance</a></li><li><a href="/cooperation/en/capacity_building/">Human Capacity Building</a></li>
+</ul></div>
+<div class="nav nav--two">
+<h3 class="flyout__header">Public-Private Partnerships</h3>
+<ul class="flyout__list">
+<li><a href="https://www.accessiblebooksconsortium.org" target="_blank">Accessible Books Consortium</a></li>
+<li><a href="/research/en/" target="_blank">WIPO Re:Search</a></li>
+<li><a href="https://www3.wipo.int/wipogreen/en/" target="_blank">WIPO GREEN</a></li>
+<li><a href="/pat-informed/en/">Pat-INFORMED</a></li>
+<li><a href="/ardi/en/">ARDI</a></li>
+<li><a href="/aspi/en/">ASPI</a></li>
+<li><a href="/wipo-match/en/">WIPO Match</a></li>
+</ul>
+</div>
+<div class="nav nav--three">
+<h3 class="flyout__header">Global Cooperation</h3>
+<ul class="flyout__list"><li><a href="/global_ip/en/">Global Infrastructure</a></li><li><a href="/enforcement/en/">Building Respect for IP</a></li>
+</ul>
+</div>
+</div>
+<p class="flyout__span d-hide"><a class="btn btn-info" href="/cooperation/en/">All cooperation</a></p></div></li>
+<li class="flyout-control">
+<a class="m-hide" href="/reference/en/">Knowledge</a> <input type="checkbox" id="reference" class="m-flyout-control__checkbox | t-hide d-hide" name="m-flyout-control__checkbox" />
+<label for="reference" class="m-flyout-control__label | t-hide d-hide">Knowledge</label><div class="flyout" aria-expanded="false"><div class="nav-group nav-group--three"><div class="nav nav--one">
+<h3 class="flyout__header">IP Databases</h3>
+<ul class="flyout__list"><li><a href="/patentscope/en/">PATENTSCOPE</a></li><li><a href="/reference/en/branddb/">Global Brand Database</a></li><li><a href="/madrid/monitor/en/">Madrid Monitor</a></li><li><a href="/reference/en/designdb/">Global Design Database</a></li><li><a href="/hague/en/design_search/">Hague Express</a></li>
+<li><a href="/ipdl/en/6ter/search-struct.jsp">Article 6ter</a></li>
+</ul></div><div class="nav nav--two">
+<h3 class="flyout__header">Legal Resources</h3>
+<ul class="flyout__list"><li><a href="https://wipolex.wipo.int/en/">IP Laws and Treaties (WIPO Lex)</a></li><li><a href="/treaties/en/">WIPO Administered Treaties</a></li>
+</ul>
+<h3 class="flyout__header">Technical Resources</h3>
+<ul class="flyout__list"><li><a href="/classifications/en/">International Classifications</a></li><li><a href="/standards/en/">Standards (WIPO Handbook)</a></li><li><a href="/reference/en/wipopearl/">Terminology (WIPO Pearl)</a></li>
+</ul></div><div class="nav nav--three">
+<h3 class="flyout__header">Information Resources</h3>
+<ul class="flyout__list"><li><a href="/tech_trends/en/">Technology Trends</a></li><li><a href="/meetings/en/archive.jsp">Documents</a></li><li><a href="/ipstats/en/">Statistics</a></li><li><a href="/publications/en/">Publications</a></li><li><a href="/directory/en/">Country Profiles</a></li><li><a href="/ipadvantage/en/">Case Studies</a></li><li><a href="/library/en/">Library</a></li>
+</ul></div></div>
+<p class="flyout__span d-hide"><a class="btn btn-info" href="/reference/en/">All knowledge</a></p></div></li><li class="flyout-control">
+<a class="m-hide" href="/about-ip/en/">About IP</a>
+<input type="checkbox" id="about-ip" class="m-flyout-control__checkbox | t-hide d-hide" name="m-flyout-control__checkbox" />
+<label for="about-ip" class="m-flyout-control__label | t-hide d-hide">About IP</label><div class="flyout" aria-expanded="false"><div class="nav-group nav-group--three"><div class="nav nav--one">
+<h3 class="flyout__header">Intellectual Property</h3>
+<ul class="flyout__list"><li><a href="/copyright/en/">Copyright</a></li><li><a href="/patents/en/">Patents</a></li><li><a href="/trademarks/en/">Trademarks</a></li><li><a href="/designs/en/">Industrial Designs</a></li><li><a href="/geo_indications/en/">Geographical Indications</a></li><li><a href="/tradesecrets/en/">Trade Secrets</a></li>
+</ul></div><div class="nav nav--two">
+<h3 class="flyout__header">Training</h3>
+<ul class="flyout__list"><li>
+<a href="/academy/en/">WIPO Academy</a></li><li>
+<a href="/meetings/en/topic_type.jsp?group_id=242">Workshops & Seminars</a></li>
+</ul>
+
+<h3 class="flyout__header">Raising Awareness</h3>
+<ul class="flyout__list"><li><a href="/ip-outreach/en/ipday/">World IP Day</a></li><li><a href="/ip-outreach/en/awards/">WIPO Awards</a></li><li><a href="/ip-outreach/en/tools/">Outreach Campaigns</a></li><li><a href="/wipo_magazine/en/">WIPO Magazine</a></li>
+</ul>
+
+
+</div><div class="nav nav--three">
+
+<h3 class="flyout__header">IP and ...</h3>
+<ul class="flyout__list">
+<li><a href="/about-ip/en/artificial_intelligence/">Artificial Intelligence</a></li>
+<li><a href="/women-and-ip/en/">Gender Equality</a></li>
+</ul>
+
+<h3 class="flyout__header">IP for ...</h3>
+<ul class="flyout__list">
+<li><a href="/about-ip/en/judiciaries/">Judiciaries</a></li>
+<li><a href="/about-ip/en/universities_research/">Universities</a></li>
+
+</ul>
+</div></div>
+<p class="flyout__span d-hide"><a class="btn btn-info" href="/about-ip/en/">All about IP</a></p></div></li><li class="flyout-control">
+<a class="m-hide" href="/about-wipo/en/">About WIPO</a>
+<input type="checkbox" id="about-wipo" class="m-flyout-control__checkbox | t-hide d-hide" name="m-flyout-control__checkbox" />
+<label for="about-wipo" class="m-flyout-control__label | t-hide d-hide">About WIPO</label><div class="flyout flyout--shaded"><div class="nav-group nav-group--three"><div class="nav nav--one">
+<h3 class="flyout__header">About WIPO</h3>
+<ul class="flyout__list"><li><a href="/about-wipo/en/">What is WIPO?</a></li><li><a href="/members/en/">Member States</a></li><li><a href="/about-wipo/en/observers/">Observers</a></li><li><a href="/about-wipo/en/dgo/">Director General</a></li><li><a href="/about-wipo/en/elections2020/">Election of Director General 2020</a></li><li><a href="/about-wipo/en/activities_by_unit/">Activities by Unit</a></li><li><a href="/about-wipo/en/offices/">External Offices</a></li>
+</ul></div><div class="nav nav--two">
+<h3 class="flyout__header">Working with Us</h3>
+<ul class="flyout__list"><li><a href="/jobs/en/">Jobs</a></li><li><a href="/procurement/en/">Procurement</a></li>
+</ul>
+<h3 class="flyout__header">Accountability</h3>
+<ul class="flyout__list"><li><a href="/about-wipo/en/budget/">Results & Budget</a></li><li><a href="/about-wipo/en/budget/financial/index.html">Financial Reporting</a></li><li><a href="/about-wipo/en/oversight/">Oversight</a></li>
+</ul>
+</div><div class="nav nav--three">
+<h3 class="flyout__header">Connecting with WIPO</h3><div class="flyout__list">
+<p>34, chemin des Colombettes<br>
+CH-1211 Geneva 20, Switzerland<br></p>
+<p>
+<a href="/about-wipo/en/visit_wipo.html">Visit Us</a> |
+<a href="https://www3.wipo.int/contact/en/">Contact Us</a></p><div class="social">
+<a href="https://www.facebook.com/wipo/" target="_blank" title="Facebook">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__facebookx2x.png" alt="Facebook">
+<span class="social__description">Facebook</span>
+</a>
+<a href="https://www.twitter.com/wipo/" target="_blank" title="Twitter">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__twitterx2x.png" alt="Twitter">
+<span class="social__description">Twitter</span>
+</a>
+<a href="https://www.youtube.com/user/wipo/" target="_blank" title="YouTube">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__youtubex2x.png" alt="YouTube">
+<span class="social__description">YouTube</span>
+</a>
+<a href="https://www.flickr.com/photos/wipo/collections/" target="_blank" title="Flickr">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__flickrx2x.png" alt="Flickr">
+<span class="social__description">Flickr</span>
+</a>
+<a href="/news/en/" target="_blank" title="RSS">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__rssx2x.png" alt="RSS">
+<span class="social__description">RSS</span>
+</a>
+<a href="https://www3.wipo.int/newsletters/en/" title="Newsletters">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__newsletter.png" alt="Newsletters">
+<span class="social__description">Newsletters</span>
+</a></div></div></div></div>
+<p class="flyout__span d-hide"><a class="btn btn-info" href="/about-wipo/en/">All about WIPO</a></p></div></li>
+<li class="flyout-control flyout-control--tools t-hide d-hide">
+<div class="flyout flyout--not-collapsible">
+<h3 class="flyout__header flyout__header--small">Tools</h3>
+<ul class="flyout__list">
+<li><a class="tools__link" href="/pressroom/en/">Media</a></li>
+<li><a class="tools__link" href="/meetings/en/">Meetings</a></li>
+<li><a class="tools__link" href="https://www3.wipo.int/contact/en/">Contact Us</a></li>
+<li><a class="tools__link" href="https://ipportal.wipo.int">IP Portal</a></li>
+<li class="dropdown language-switcher">
+<a class="tools__link dropdown-toggle" data-toggle="dropdown" href="#">English <strong class="caret"><!-- more --></strong></a>
+<ul class="dropdown-menu"><li><a href="/portal/ar/index.html">عربي</a></li><li><a href="/portal/es/index.html">Español</a></li><li><a href="/portal/fr/index.html">Français</a></li><li><a href="/portal/ru/index.html">Русский</a></li><li><a href="/portal/zh/index.html">中文</a></li></ul></li></ul>
+</div></li>
+</ul>
+<form method="GET" action="/tools/en/gsearch.html" class="form-search" name="searchm" id="searchm">
+<input name="cx" type="hidden" value="016458537594905406506:hmturfwvzzq">
+<input name="cof" type="hidden" value="FORID:11">
+<label class="element-invisible" for="querym">Search</label>
+<input class="search-query" id="querym" name="q" placeholder="Search WIPO" type="text">
+<button class="btn ss-search" title="Search"><!-- search --></button>
+</form></div>
+</nav><div class="container">
+<div class="wrap-outer">
+<div class="wrap-inner">
+<!-- content begin -->
+<div class="content content--featured">
+<div class="cols cols--two">
+<div class="col">
+<figure><a href="/pressroom/en/articles/2019/article_0013.html"><img src="/export/sites/www/shared/pics/wipo_wipr_2019_500.jpg" alt="" /></a></figure>
+</div>
+<div class="col">
+<h1><a href="/pressroom/en/articles/2019/article_0013.html">World Intellectual Property Report 2019: Local Hotspots, Global Networks</a></h1>
+<p>The <a href="/publications/en/details.jsp?id=4467">2019 edition of WIPO’s World Intellectual Property Report</a> analyzes millions of patent and scientific publication records across several decades to conclude that innovative activity has grown increasingly collaborative and transnational, while originating in a few large clusters located in a small number of countries.</p>
+</div>
+</div>
+</div>
+<!--<div class="content content--featured">
+<div class="cols cols--two">
+<div class="col">
+<figure><a href="http://ocms.wipo.int/pressroom/en/articles/2019/article_0011.html"><img src="http://ocms.wipo.int/shared/pics/hero/2019assemblies_end_hero_845.jpg" alt="" /></a>
+<figcaption class="credit">(Photo: WIPO/Berrod)</figcaption>
+</figure>
+</div>
+<div class="col">
+<h1><a href="http://ocms.wipo.int/pressroom/en/articles/2019/article_0011.html">WIPO Assemblies Close with New Direction for Organization’s Future Work</a></h1>
+<p>Delegates from WIPO’s 192 member states closed their 2019 Assemblies meetings with agreement on the Organization’s work program and related budget for the 2020-21 biennium, while WIPO’s intellectual property-related treaties attracted nearly a dozen new adherents.</p>
+<p><a href="http://ocms.wipo.int/pressroom/en/stories/assemblies_2019.html">Assemblies news spotlight</a> | <a href="http://ocms.wipo.int/publications/en/details.jsp?id=4461">Director General's report</a></p>
+</div>
+</div>
+</div>
+<div class="content content--featured">
+<div class="cols cols--two">
+<div class="col">
+<figure><a href="http://ocms.wipo.int/portal/en/news/2019/article_0032.html"><img src="/about-wipo/images/assemblies_hero_1280.jpg" alt="" /></a></figure>
+</div>
+<div class="col">
+<h1><a href="http://ocms.wipo.int/portal/en/news/2019/article_0032.html">New in PATENTSCOPE: Chemical Sub-Structure Search</a></h1>
+<p>Understanding the chemical structure of molecules is critical for success in the world of chemistry, with this type of knowledge serving as a springboard for further innovations in healthcare, engineering, environmental protection and other fields. To support the development of important new products, WIPO has developed a new tool to facilitate chemical searches.</p>
+</div>
+</div>
+</div>-->
+<div class="content">
+<div class="main">
+<h1 class="header h1_line"><a href="/portal/en/news/">In focus</a></h1>
+<div id="wipo-news" class="content" data-number="3" data-xml="/tools/en/includes/ocms_news_portal.xml?path=/portal/en/news/"><!-- include xml --></div>
+<p><a class="btn call-to-action" href="/pressroom/en/" title="">Media</a> <a class="btn call-to-action" href="/meetings/en/" title="">Meetings</a> <a class="btn call-to-action" href="/webcasting/en/" title="">Webcasting</a> Follow us <a href="https://www.twitter.com/wipo/" target="_blank" rel="noopener"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__twitter_invertx2x.png" alt="WIPO on Twitter" border="0" /></a> <a href="https://www.facebook.com/wipo/" target="_blank" rel="noopener"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__facebook_invertx2x.png" alt="WIPO on Facebook" border="0" /></a> <a href="https://www.linkedin.com/company/wipo/" target="_blank" rel="noopener"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__linkedin_invertx2x.png" alt="WIPO on LinkedIn" border="0" /></a> <a href="https://www.youtube.com/wipo/" target="_blank" rel="noopener"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__youtube_invertx2x.png" alt="WIPO on YouTube" border="0" /></a> <a href="https://www.flickr.com/photos/wipo/collections/" target="_blank" rel="noopener"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__flickr_invertx2x.png" alt="WIPO on Flickr" border="0" /></a> <a href="/news/en/newsfeed.jsp"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__rss_invertx2x.png" alt="WIPO RSS feed" border="0" /></a> <a href="https://www3.wipo.int/newsletters/en/" target="_blank" title="Newsletters" rel="noopener"> <img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__newsletter_invertx2x.png" alt="Newsletters" /> </a></p>
+</div>
+<div class="complementary">
+<h1 class="header h1_line"><a href="/about-wipo/en/dgo/">Director General</a></h1>
+<div class="box"><!--<figure><a id="wipoLnk1" href="#wipoModal1" data-toggle="modal"><img class="media-object" src="http://ocms.wipo.int/shared/pics/ai_conversation_2019_dg_845.jpg" alt="" /></a></figure>
+<div aria-hidden="true" id="wipoModal1" class="modal hide fade" style="display: none;" tabindex="0">
+<div class="modal-body"><video width="auto" height="auto" id="wipoVideo1" tabindex="1" poster="/shared/pics/posters/ai_conversation_2019_dg_1920.jpg" preload="none" controls="controls"><source type="video/ogg" src="https://www.wipo.int/multimedia-video/en/artificial_intelligence/ai_conversation_2019_dg.ogg" /> <source type="video/webm" src="https://www.wipo.int/multimedia-video/en/artificial_intelligence/ai_conversation_2019_dg.webm" /> <source type="video/mp4" src="https://www.wipo.int/multimedia-video/en/artificial_intelligence/ai_conversation_2019_dg.mp4" /></video></div>
+<div class="modal-footer"><button id="wipoBtn1" class="btn" data-dismiss="modal">Close</button></div>
+</div>--> <!--<figure><a href="http://ocms.wipo.int/publications/en/details.jsp?id=4461"><img src="http://ocms.wipo.int/shared/pics/dg_address_assemblies_2019_845.jpg" alt="Photo of WIPO DG opening Assemblies 2019" /></a>
+<figcaption class="credit">(Photo: WIPO/Martin)</figcaption>
+</figure>
+<p class="secondary"><a href="http://ocms.wipo.int/publications/en/details.jsp?id=4461">Director General Francis Gurry delivered his written report to the WIPO Assemblies, presenting results of what he called "a strong and productive year for the Organization."</a></p>-->
+<figure><a href="/portal/en/news/2019/article_0054.html"><img src="/export/sites/www/shared/pics/tk_training_workshop_2019_845.jpg" alt="Photo of WIPO Director General Meets with women entrepreneurs from indigenous peoples and local communities." /></a>
+<figcaption class="credit">(Photo: WIPO/Berrod)</figcaption>
+</figure>
+<p class="secondary"><a href="/portal/en/news/2019/article_0054.html">WIPO Director General Francis Gurry welcomes to WIPO two dozen women entrepreneurs from indigenous peoples and local communities</a>.</p>
+</div>
+</div>
+</div>
+<div class="content"><br />
+<figure><a href="/about-wipo/en/"><img src="/export/sites/www/portal/images/wipo_mission_1280.jpg" alt="WIPO Mission statement: The World Intellectual Property Organization promotes innovation and creativity for the economic, social and cultural development of all countries, through a balanced and effective international intellectual property system." /></a></figure>
+</div>
+<div class="content">
+<h1 class="header h1_line"><a href="/services/en/">IP services</a> <!--<a class="btn call-to-action" href="/services/en/">Services home</a>--></h1>
+<p class="lead">We provide IP services that encourage individuals and businesses to innovate and create.</p>
+<section class="cols cols--three is-border-divided">
+<div class="col">
+<div class="box">
+<h2 class="h2_services"><a href="/pct/en/">Patents</a> <a title="WIPO PCT: The International Patent System" href="/pct/en/"><img class="promo__logo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/promo-pct.svg" alt="Logo WIPO PCT" width="111" height="12" /></a></h2>
+<p class="secondary">The International Patent System</p>
+</div>
+</div>
+<div class="col">
+<div class="box">
+<h2 class="h2_services"><a href="/madrid/en/">Trademarks</a> <a title="WIPO Madrid: The International Trademark System" href="/madrid/en/"><img class="promo__logo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/promo-madrid.svg" alt="Logo WIPO Madrid" width="129" height="12" /></a></h2>
+<p class="secondary">The International Trademark System</p>
+</div>
+</div>
+<div class="col">
+<div class="box">
+<h2 class="h2_services"><a href="/hague/en/">Industrial Designs</a> <a title="WIPO Hague: The International Design System" href="/hague/en/"><img class="promo__logo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/promo-hague.svg" alt="Logo WIPO Hague" width="120" height="12" /></a></h2>
+<p class="secondary">The International Design System</p>
+</div>
+</div>
+</section>
+</div>
+<div class="content">
+<section class="cols cols--three is-border-divided">
+<div class="col">
+<div class="box">
+<h2 class="h2_services"><a href="/lisbon/en/">Appellations of Origin</a> <a title="WIPO Lisbon: The International System of Appellations of Origin" href="/lisbon/en/"><img class="promo__logo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/promo-lisbon.svg" alt="Logo WIPO Lisbon" width="120" height="12" /></a></h2>
+<p class="secondary">The International System of Appellations of Origin</p>
+</div>
+</div>
+<div class="col">
+<div class="box">
+<h2 class="h2_services"><a href="/amc/en/">Dispute Resolution</a> <a title="WIPO ADR: Alternative dispute resolution" href="/amc/en/"><img class="promo__logo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/promo-adr.svg" alt="Logo WIPO ADR" width="111" height="12" /></a></h2>
+<p class="secondary">Arbitration and Mediation Center</p>
+</div>
+</div>
+<div class="col">
+<div class="box">
+<h2 class="h2_services"><a href="/amc/en/domains/">Domain Names</a> <a title="WIPO ADR: Domain name dispute resolution" href="/amc/en/domains/"><img class="promo__logo" src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/promo-adr.svg" alt="Logo WIPO ADR" width="111" height="12" /></a></h2>
+<p class="secondary">Arbitration and Mediation Center</p>
+</div>
+</div>
+</section>
+</div>
+<div class="content cols cols--three">
+<h1 class="header h1_line"><a href="/policy/en/">Policy</a> <!--<a class="btn call-to-action" href="/policy/en/">Policy home</a>--></h1>
+<p class="lead">We bring stakeholders together to develop global IP agreements. Follow policy discussions and negotiations on the future development of IP in our <a href="/meetings/en/">standing committees and meetings</a>.</p>
+<!--<div class="col">
+<figure><a href="/meetings/en/2018/respectip_africa_conference.html"> <img src="/portal/images/wipo_respectip2018_500.jpg" style="border: 1px solid;" alt="" /> </a>
+<figcaption class="credit">(Image: WIPO/Przybylowicz)</figcaption>
+</figure>
+<h2><a href="/meetings/en/2018/respectip_africa_conference.html">International Conference</a></h2>
+<p>"Respect for IP – Growing from the Tip of Africa" (October 23 to 25). Fostering dialogue on building respect for IP, to support a balanced IP enforcement system.</p>
+</div>-->
+<div class="col">
+<figure><a href="/meetings/en/"> <img src="/export/sites/www/portal/images/wipo_meetings_500.jpg" alt="" /> </a>
+<figcaption class="credit">(Photo: WIPO/Berrod)</figcaption>
+</figure>
+<h2><a href="/meetings/en/">WIPO meetings</a></h2>
+<p>Follow policy discussions and negotiations on the future development of IP in our standing committees and meetings.</p>
+</div>
+<div class="col">
+<figure><a href="/about-wipo/en/assemblies/2019/a_59/index.html"> <img src="/export/sites/www/portal/images/wipo_assemblies_500.jpg" alt="" /> </a>
+<figcaption class="credit">(Photo: WIPO/Berrod)</figcaption>
+</figure>
+<h2><a href="/about-wipo/en/assemblies/2019/a_59/index.html">WIPO Assemblies</a></h2>
+<p>The 59<sup>th</sup> series of meetings of the Assemblies took place in Geneva from September 30 to October 9, 2019.</p>
+</div>
+<div class="col">
+<figure><a href="/treaties/en/"> <img src="/export/sites/www/portal/images/wipo_treaties_500.jpg" alt="" /> </a>
+<figcaption class="credit">(Photo: WIPO/MARTIN)</figcaption>
+</figure>
+<h2><a href="/treaties/en/">WIPO treaties</a></h2>
+<p>We administer 26 treaties at the international level, touching on a wide range of IP-related subjects. These treaties are the bedrock of the IP system.</p>
+</div>
+</div>
+<div class="content">
+<h1 class="header h1_line"><a href="/cooperation/en/">Cooperation</a> <!--<a class="btn call-to-action" href="/cooperation/en/">Cooperation home</a>--></h1>
+<p class="lead">We help countries, businesses and individuals collaborate on using IP to improve lives.</p>
+<section class="cols cols--three">
+<div class="col">
+<figure><a href="/academy/en/"><img src="/export/sites/www/shared/pics/wipo_0901_600_200.jpg" alt="" /> </a>
+<figcaption class="credit">(Photo: WIPO/Berrod)</figcaption>
+</figure>
+<h2><a href="/academy/en/">WIPO Academy</a></h2>
+<p>Sign up for WIPO Academy distance learning or face-to-face courses all year round, taught by people who know intellectual property.</p>
+</div>
+<div class="col">
+<figure><a href="/iap/en/"> <img src="/export/sites/www/portal/images/iap_500_200.jpg" alt="" /> </a>
+<figcaption class="credit">(Photo: Getty Images/DrAfter123)</figcaption>
+</figure>
+<h2><a href="/iap/en/">Assistance for inventors</a></h2>
+<p>The Inventor Assistance Program (IAP) matches developing-country inventors with patent attorneys who give them free legal advice on patenting.</p>
+</div>
+<div class="col">
+<figure><a href="/tisc/en/"><img src="/export/sites/www/portal/images/tisc_500_200.jpg" alt="" /></a>
+<figcaption class="credit">(Photo: IPOPHIL)</figcaption>
+</figure>
+<h2><a href="/tisc/en/">TISCs</a></h2>
+<p>WIPO Technology and Innovation Support Centers (TISCs) provide access to high quality technology information and related services.</p>
+</div>
+</section>
+</div>
+<div class="content">
+<section class="cols cols--three">
+<div class="col">
+<figure><a href="https://www.accessiblebooksconsortium.org/"><img alt="" src="/export/sites/www/portal/images/wipo_abc_600_200.jpg" /> </a>
+<figcaption class="credit">(Photo: WIPO/Sergio Parrella)</figcaption>
+</figure>
+<h2><a href="https://www.accessiblebooksconsortium.org/">ABC</a></h2>
+<p>The Accessible Books Consortium (ABC) aims to increase the number of books worldwide in accessible formats and to make them available to people who are blind or visually impaired.</p>
+</div>
+<div class="col">
+<figure><a href="https://www3.wipo.int/wipogreen/en/"> <img alt="" src="/export/sites/www/portal/images/wipo_green_600_200.jpg" /> </a>
+<figcaption class="credit">(Photo: iStock.com/©robertsrob)</figcaption>
+</figure>
+<h2><a href="https://www3.wipo.int/wipogreen/en/">WIPO GREEN</a></h2>
+<p>WIPO GREEN promotes innovation and diffusion of green technologies by connecting technology and service providers with those seeking innovative, environmental solutions.</p>
+</div>
+<div class="col"><a id="wipoLnk2" href="#wipoModal2" data-toggle="modal"><img class="media-object" src="/export/sites/www/portal/images/wipo_research_600_200.jpg" alt="" /></a>
+<div id="wipoModal2" class="modal hide fade" style="display: none;" tabindex="0">
+<div class="modal-body"><video width="300" height="150" id="wipoVideo2" tabindex="1" poster="/shared/pics/posters/wipo_research_promo_2017_640.jpg" preload="none" controls="controls"> <source type="video/ogg" src="https://www.wipo.int/multimedia-video/en/research/wipo_research_promo_2017.ogg " /> <source type="video/webm" src="https://www.wipo.int/multimedia-video/en/research/wipo_research_promo_2017.webm " /> <source type="video/mp4" src="https://www.wipo.int/multimedia-video/en/research/wipo_research_promo_2017.mp4" /></video></div>
+<div class="modal-footer"><button id="wipoBtn2" class="btn" data-dismiss="modal">Close</button></div>
+</div>
+<br />
+<h2><a href="/research/en/">WIPO Re:Search</a></h2>
+<p>WIPO Re:Search is an international consortium through which public and private sector organizations share intellectual property and expertise with the global health research community.</p>
+</div>
+</section>
+</div>
+<div class="content cols cols--two">
+<h1 class="header h1_line"><a href="/reference/en/">Knowledge</a> <!--<a class="btn call-to-action" href="/reference/en/">Knowledge home</a>--></h1>
+<p class="lead">We provide the data and economic intelligence that enable strategic decisions.</p>
+<div class="col">
+<h2>Global IP infrastructure</h2>
+<a id="wipoLnk3" href="#wipoModal3" data-toggle="modal"><img class="media-object" src="/export/sites/www/shared/pics/posters/global_ip_infrastructure_640_player.jpg" alt="" /></a>
+<div id="wipoModal3" class="modal hide fade" style="display: none;" tabindex="0">
+<div class="modal-body"><video width="auto" height="auto" id="wipoVideo3" tabindex="1" poster="/portal/images/global_ip_infrastructure_500.jpg" preload="none" controls="controls"><source type="video/ogg" src="https://www.wipo.int/multimedia-video/en/portal/knowledge_network_2017.ogg" /> <source type="video/webm" src="https://www.wipo.int/multimedia-video/en/portal/knowledge_network_2017.webm" /> <source type="video/mp4" src="https://www.wipo.int/multimedia-video/en/portal/knowledge_network_2017.mp4" /></video></div>
+<div class="modal-footer"><button id="wipoBtn3" class="btn" data-dismiss="modal">Close</button></div>
+</div>
+<!-- <figure><img src="/portal/images/global_ip_infrastructure_500.jpg" alt="" /></figure> --><br />
+<div class="groups">
+<div class="group__item">
+<h3 class="group__header"><a href="/patentscope/en/" target="_self">PATENTSCOPE</a></h3>
+<p class="secondary"><span id="patentscope"><!-- number --></span> international and national patent documents.</p>
+</div>
+<div class="group__item">
+<h3 class="group__header"><a href="/reference/en/branddb/" target="_self">Global Brand Database</a></h3>
+<p class="secondary">
+<script type="text/javascript">
+						tenThousands("brand");
+					</script>
+records of trademarks, appellations of origin and emblems from multiple national and international sources.</p>
+</div>
+<div class="group__item">
+<h3 class="group__header"><a href="/reference/en/designdb/" target="_self">Global Design Database</a></h3>
+<p class="secondary">
+<script type="text/javascript">
+						tenThousands("design");
+					</script>
+industrial design registrations from the Hague System and participating national collections.</p>
+</div>
+<div class="group__item">
+<h3 class="group__header"><a href="https://wipolex.wipo.int/en/" target="_self">WIPO Lex</a></h3>
+<p class="secondary"><span id="wipolex"><!-- number --></span> records of national IP laws and treaties of some <span id="treaties"><!-- number --></span> countries.</p>
+</div>
+</div>
+</div>
+<div class="col">
+<h2>Market intelligence</h2>
+<figure><img src="/export/sites/www/portal/images/i_640026090_500.jpg" alt="" />
+<figcaption class="credit">(Photo: iStock.com/© NicoElNino)</figcaption>
+</figure>
+<div class="groups">
+<div class="group__item">
+<h3 class="group__header"><a href="/ipstats/en/#publications">IP Services yearly reviews</a></h3>
+<p class="secondary">Comprehensive facts, figures and analysis.</p>
+</div>
+<div class="group__item">
+<h3 class="group__header"><a href="/publications/en/series/index.jsp?id=38">World IP Report</a></h3>
+<p class="secondary">An in-depth look at specific trends in the field of IP.&nbsp;</p>
+</div>
+<div class="group__item">
+<h3 class="group__header"><a href="https://www.wipo.int/publications/en/series/index.jsp?id=36">WIPO IP Facts and Figures</a></h3>
+<p class="secondary">An overview of IP activity using the latest available year of complete statistics.</p>
+</div>
+<div class="group__item">
+<h3 class="group__header"><a href="https://www.wipo.int/global_innovation_index/en/">Global Innovation Index</a></h3>
+<p class="secondary">A leading reference for measuring an economy’s innovation performance.</p>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script type="text/javascript">
+		jQuery(document).ready(function (){
+			var v1 = $("#wipoVideo1").get(0);
+			var v2 = $("#wipoVideo2").get(0);					
+			var v3 = $("#wipoVideo3").get(0);					
+			var v4 = $("#wipoVideo4").get(0);	
+			var playVideo = function(obj) {
+				if (obj.paused){
+					obj.autoplay = true;
+					obj.play();
+				}
+			}
+			var stopVideo = function(obj) {
+				if (!obj.paused){
+					obj.pause();
+					obj.currentTime = 0;
+				}
+			}
+			$('#wipoLnk1').click(function (){
+				playVideo (v1);
+			});
+			$('#wipoBtn1').click(function (){
+				stopVideo(v1);
+			});
+			$('#wipoModal1').bind('hide', function (){
+				stopVideo(v1);
+			});
+			$('#wipoLnk2').click(function (){
+				playVideo (v2);
+			});
+			$('#wipoBtn2').click(function (){
+				stopVideo(v2);
+			});
+			$('#wipoModal2').bind('hide', function (){
+				stopVideo(v2);
+			});				
+			$('#wipoLnk3').click(function (){
+				playVideo (v3);
+			});
+			$('#wipoBtn3').click(function (){
+				stopVideo(v3);
+			});
+			$('#wipoModal3').bind('hide', function (){
+				stopVideo(v3);
+			});	
+			$('#wipoLnk4').click(function (){
+				playVideo (v4);
+			});
+			$('#wipoBtn4').click(function (){
+				stopVideo(v4);
+			});
+			$('#wipoModal4').bind('hide', function (){
+				stopVideo(v4);
+			});	
+		});
+	</script>
+</p>
+<!-- content end -->
+</div><!-- wrap-inner -->
+</div><!-- wrap-outer -->
+</div><!-- container -->
+<footer role="contentinfo"><div class="contentinfo__inner">
+<a class="self" href="/portal/en/" title="World Intellectual Property Organization"><img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo__wipo.svg" alt="WIPO logo" class="t-hide m-hide"></a>
+<ul>
+<li><a href="https://www3.wipo.int/contact/en/">Contact Us</a></li>
+<li><a href="/tools/en/sitemap.html">Site map</a></li>
+<li><a href="/accessibility/en/">Accessibility</a></li>
+<li><a href="/tools/en/disclaim.html">Terms of use and privacy policy</a></li>
+</ul>
+<div class="social" id="social">
+<a href="https://www.twitter.com/wipo/" target="_blank" title="Twitter">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__twitterx2x.png" alt="Twitter">
+<span class="social__description">Twitter</span>
+</a>
+<a href="https://www.facebook.com/wipo/" target="_blank" title="Facebook">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__facebookx2x.png" alt="Facebook">
+<span class="social__description">Facebook</span>
+</a>
+<a href="https://www.linkedin.com/company/wipo/" target="_blank" title="LinkedIn">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__linkedinx2x.png" alt="LinkedIn">
+<span class="social__description">LinkedIn</span>
+</a>
+<a href="https://www.youtube.com/user/wipo/" target="_blank" title="YouTube">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__youtubex2x.png" alt="YouTube">
+<span class="social__description">YouTube</span>
+</a>
+<a href="https://www.flickr.com/photos/wipo/collections/" target="_blank" title="Flickr">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__flickrx2x.png" alt="Flickr">
+<span class="social__description">Flickr</span>
+</a>
+<a href="https://www.wipo.int/news/en/newsfeed.jsp" target="_blank" title="RSS">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__rssx2x.png" alt="RSS">
+<span class="social__description">RSS</span>
+</a>
+<a href="https://www3.wipo.int/newsletters/en/" target="_blank" title="Newsletters">
+<img src="/export/system/modules/org.wipo.internet.rwd.templates/resources/images/social__newsletter.png" alt="Newsletters">
+<span class="social__description">Newsletters</span>
+</a>
+</div>
+<a class="u-line-top  u-display-block  t-hide  d-hide  flyout__span" href="#wipo-int">Back to top ↑</a>
+</div><!-- contentinfo__inner -->
+</footer><script src='/export/system/modules/org.wipo.internet.rwd.templates/resources/scripts/plugins2016-min.js'></script>
+<script src='/export/system/modules/org.wipo.internet.rwd.templates/resources/scripts/main2016-min.js'></script>
+<script src='/export/system/modules/org.wipo.internet.rwd.templates/resources/webfonts/ss-standard.js'></script>
+<script src='/export/system/modules/org.wipo.internet.rwd.templates/resources/scripts/wipo.js'></script></body></html>

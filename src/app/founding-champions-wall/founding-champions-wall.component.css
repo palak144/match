@@ -1,0 +1,83 @@
+.carousel-control-next,
+.carousel-control-prev {
+    justify-content: none !important;
+    /* width: 0 !important; */
+}
+
+.carousel-control-next {
+    right: -83px;
+}
+
+.carousel-control-prev {
+    left: -80px;
+}
+
+.frame {
+    width: 100%;
+    padding: 20px;
+    border: 8px solid #314668;
+    /* box-shadow: 0 6px 0 6px grey; */
+}
+
+.frame1 {
+    width: 100%;
+    border: 8px solid #eeeeee;
+    padding: 20px;
+    /* box-sh
+dow: 0 6px 0 6px grey; */
+}
+
+.wallShadowEffect {
+    position: relative;
+}
+
+.wallShadowEffect img {
+    z-index: 1;
+    position: relative;
+    background: #fff;
+}
+
+.wallShadowEffect:before,
+.wallShadowEffect:after {
+    z-index: 0;
+    position: absolute;
+    content: "";
+    bottom: 30px;
+    left: 17px;
+    width: 50%;
+    top: 70%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 40px 20px #777;
+    -moz-box-shadow: 0 40px 20px #777;
+    box-shadow: 0 40px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.wallShadowEffect:after {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 17px;
+    left: auto;
+}
+
+
+/*------------------------------------
+    media query (max-width: 767px)
+------------------------------------*/
+
+@media (max-width: 767px) {
+    .carousel-control-next {
+        right: -20px;
+    }
+    .carousel-control-prev {
+        left: -20px;
+    }
+}

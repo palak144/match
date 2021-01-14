@@ -1,0 +1,861 @@
+<div class="">
+    <form [formGroup]="approvedAppForm">
+        <div class="row spcUd">
+            <!-- <div class="col-sm-6">
+          </div>  -->
+            <ng4-loading-spinner></ng4-loading-spinner>
+            <div class="col-sm-12 statusBar">
+                <div class="bg clearfix">
+                    <span class="wipoImg">
+                        
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" (click)="onSubmit()"><img src="assets/images/update.gif" alt="">Update</button>
+                        </span>
+                    </span>
+                    <span class="wipoImg">
+                        
+                        <span class="input-group-btn">
+                            <button [disabled]="!approveFlag" class="btn btn-default  sign-in "
+                                (click)="openModalApprove(templateApprove)"><img src="assets/images/checked.png" alt="">Approve Stage</button>
+                            <!-- [disabled]="disable" -->
+                        </span>
+                    </span>
+                    <span class="wipoImg">
+                        
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" [disabled]="rejectFlag"
+                                (click)="openModalReject(templateReject)"><img src="assets/images/reject.png" alt="">Reject</button></span>
+                    </span>
+                    <span class="wipoImg">
+                        
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" (click)="printApproveTab()"><img src="assets/images/print_icon.gif" alt="">View print </button>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="row ">
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Application ref Id
+                                <span class="asterick">*</span>:</label>
+                            <input type="text" class="form-control" formControlName="appRefID" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels">EOI Request Id
+                                <span class="asterick">*</span>:</label>
+                            <input type="text" class="form-control" formControlName="eoiReqID" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  ">
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Request from IP Address:</label>
+                            <input type="text" class="form-control" formControlName="ipAddress" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Request date:</label>
+                            <input type="text" class="form-control" formControlName="reqDate" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-3">
+                <span class="wipoImgNotProcessed ">
+                    <img class="warning" src="{{eoiStatusImage}}" alt="">
+                </span>
+
+            </div>
+        </div>
+        <div class="row  ">
+            <div class="col-sm-12">
+                <div class="accordion" id="acc1">
+                    <div class="card crdApprove">
+                        <div class="card-header card-header1 ch" id="headingOneApprove1">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link blu" type="button" data-toggle="collapse" data-target="#collapseOneApprove1" aria-expanded="true" aria-controls="collapseOneApprove1">
+                                    <span class="floatLeft">
+                                        <h6 class="siz">
+                                            <i class="fa fa-caret-down spc floatLeft"></i>Application Party Details
+                                        </h6>
+                                    </span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOneApprove1" class="collapse show" aria-labelledby="headingOneApprove1" data-parent="#acc1">
+                            <div class="card-body">
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Institution or Organization Name
+                                                <span class="asterick">*</span>:</label>
+                                            <input type="text" class="form-control" formControlName="instName" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Applicant Type:</label>
+                                            <input type="text" class="form-control" formControlName="appType" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Contact First Name
+                                                <span class="asterick">*</span>:</label>
+                                            <input type="text" class="form-control" formControlName="fName" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Contact Last Name
+                                                <span class="asterick">*</span>:</label>
+                                            <input type="text" class="form-control" formControlName="lname" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Address:</label>
+                                            <input type="text" class="form-control" formControlName="add" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">City:</label>
+                                            <input type="text" class="form-control" formControlName="city" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Country
+                                                <span class="asterick">*</span>:</label>
+                                            <input type="text" class="form-control" formControlName="country" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Contact No.
+                                                <span class="asterick">*</span>:</label>
+                                            <input type="text" class="form-control" formControlName="contactNo" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Mobile :</label>
+                                            <input type="text" class="form-control" formControlName="mobileNo">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Email
+                                                <span class="asterick">*</span>:</label>
+                                            <input type="text" class="form-control" formControlName="email" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Fax No:</label>
+
+                                            <input type="text" class="form-control" formControlName="faxNo">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Website:</label>
+                                            <input type="url" class="form-control" formControlName="website" [ngClass]="{ 'is-invalid': submitted && f.website.errors }">
+                                        </div>
+
+
+                                        <div *ngIf="submitted && f.website.errors?.pattern " class="errors website_error">
+                                            <p>Must be a valid Website url (ex: https://www.sitename.com)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-12 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">
+                                                <b>More Details</b>(Note : Below details are only given by
+                                                Non-governmental
+                                                organization ):</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Corporate Profile:</label>
+                                            <textarea name="" id="" cols="60" rows="3" class="form-control" formControlName="cProfile"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Service provided:</label>
+                                            <textarea name="" id="" cols="60" rows="3" class="form-control" formControlName="serviceProvided"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Business Sector:</label>
+                                            <select formControlName="busSelector" class="form-control">
+                                                <option *ngFor="let sector of bussiness_sector " value={{sector.id}}>
+                                                    {{sector.itemName}}
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Staff Size:</label>
+                                            <select formControlName="staffSize" class="form-control">
+                                                <option *ngFor="let staffSize of staff_size " value={{staffSize.id}}>
+                                                    {{staffSize.itemName}}
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels"> Parnership Objective:</label>
+
+                                            <textarea name="" id="" cols="60" rows="3" class="form-control" formControlName="objective"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6 WipoMargins">
+                                        <div class="form-group">
+                                            <label for="" class="wipoLabels">Earlier Partership(with UN Bodies):</label>
+                                            <textarea name="" id="" cols="60" rows="3" class="form-control" formControlName="partnership"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card crdApprove" id="acc2">
+                    <div class="card-header card-header1 ch" id="headingOneApprove2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link blu" type="button" data-toggle="collapse" data-target="#collapseOneApprove2" aria-expanded="true" aria-controls="collapseOneApprove2">
+                                <span class="floatLeft">
+                                    <h6 class="siz">
+                                        <i class="fa fa-caret-down spc floatLeft"></i>Project Proposal Details
+                                    </h6>
+                                </span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOneApprove2" class="collapse show" aria-labelledby="headingOneApprove2" data-parent="#acc2">
+                        <div class="card-body">
+                            <div class="row  ">
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Project Title
+                                            <span class="asterick">*</span>:</label>
+                                        <input type="text" class="form-control" formControlName="projTitle" [ngClass]="{ 'is-invalid': submitted && f.projTitle.errors }" disabled>
+                                        <div *ngIf="submitted && f.projTitle.errors" class="invalid-feedback">
+                                            <div *ngIf="f.projTitle.errors.required">Project Title is required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Proposal Type
+                                            <span class="asterick">*</span>:</label>
+                                        <input type="text" class="form-control" formControlName="proType" [ngClass]="{ 'is-invalid': submitted && f.proType.errors }" disabled>
+                                        <div *ngIf="submitted && f.proType.errors" class="invalid-feedback">
+                                            <div *ngIf="f.proType.errors.required">Proposal type is required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  ">
+                                <div class="col-sm-12 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Project Description:</label>
+                                        <ckeditor formControlName="projDesciption">
+                                        </ckeditor>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  ">
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Project Weblink:</label>
+                                        <input type="text" class="form-control" formControlName="projWeblink">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels"> Annual Turnover(in USD):</label>
+                                        <select width="440px" class="form-control" id="sel5" formControlName="annTurnover">
+                                            <option value="1">Below 1 million</option>
+                                            <option value="2">Between 1 million to 100 million</option>
+                                            <option value="3">Between 100 million to 1 Billion</option>
+                                            <option value="4">More than 1 Billion </option>
+                                            <option value="0">Not Specified</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  ">
+                                <div class="col-sm-12 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Project Benefits:</label>
+                                        <ckeditor formControlName="projBenefit">
+                                        </ckeditor>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  ">
+                                <div class="col-sm-12 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Project Risks:</label>
+                                        <ckeditor formControlName="projRisk">
+                                        </ckeditor>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Project Interest
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="projInstID" formControlName="projInstID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.projInstID.errors }" [data]="projIntrested" [(ngModel)]="selected_projIntrested" [settings]="dropdownSettings"
+                                            disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.projInstID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.projInstID.errors.required">Project Interest is required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Countries to be Affected
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="affCountries" formControlName="affCountries" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.affCountries.errors }" [data]="affectedCountries" [(ngModel)]="selected_countries" [settings]="dropdownSettings"
+                                            disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.affCountries.errors" class="invalid-feedback">
+                                            <div *ngIf="f.affCountries.errors.required">Countries to be Affected is required
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  ">
+                                <div class="col-sm-6 WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Targeted Global Issues
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="globalIssueID" formControlName="globalIssueID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.globalIssueID.errors }" [data]="globalIssues" [(ngModel)]="selected_globalIssues" [settings]="dropdownSettings"
+                                            disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.globalIssueID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.globalIssueID.errors.required">Targeted Global Issues is/are required
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">IP Subject Areas
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="ipSubjID" formControlName="ipSubjID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.ipSubjID.errors }" [data]="ipField" [(ngModel)]="selected_ipFields" [settings]="dropdownSettings" disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.ipSubjID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.ipSubjID.errors.required">IP Subject Area is/are required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Technical Fields
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="techFieldsID" formControlName="techFieldsID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.techFieldsID.errors }" [data]="techField" [(ngModel)]="selected_techFields" [settings]="dropdownSettings"
+                                            (onClose)="onClose($event)" disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.techFieldsID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.techFieldsID.errors.required">Technical Fields is/are required
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Sub Technical Fields
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="subTechFieldID" formControlName="subTechFieldID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.subTechFieldID.errors }" [data]="subTechField" [(ngModel)]="selected_subTechFields" [settings]="dropdownSettings"
+                                            disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.subTechFieldID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.subTechFieldID.errors.required">Sub Technical Fields is/are required
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">SDGs
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="gblIssuesID" formControlName="sdgs" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.sdgs.errors }" [data]="sdg" [(ngModel)]="selected_sdg" [settings]="dropdownSettings" disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.sdgs.errors" class="invalid-feedback">
+                                            <div *ngIf="f.sdgs.errors.required">SDGs is/are required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Regions to be Affected
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="affRegionID" formControlName="affRegionID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.affRegionID.errors }" [data]="affRegion" [(ngModel)]="selected_affRegion" [settings]="dropdownSettings"
+                                            disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.affRegionID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.affRegionID.errors.required">Regions to be Affected is/are required
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Type of Project
+                                            <span class="asterick">*</span>:</label>
+                                        <select width="440px" class="form-control" id="sel5" formControlName="projTypeID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.projTypeID.errors }">
+                                            <option value="1">South-South Cooperation Project</option>
+                                            <option value="2">Technical Assistance</option>
+                                            <option value="3">Private-Public Partnership</option>
+                                            <option value="4">Other</option>
+                                        </select>
+                                        <div *ngIf="submitted && f.projTypeID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.projTypeID.errors.required">Type of Project is required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6  WipoMargins">
+                                    <div class="form-group">
+                                        <label for="" class="wipoLabels">Technical Assistance
+                                            <span class="asterick">*</span>:</label>
+                                        <angular2-multiselect name="techAssisID" formControlName="techAssisID" class="form-control form-control-override" [ngClass]="{ 'is-invalid': submitted && f.techAssisID.errors }" [data]="techAssistance" [(ngModel)]="selected_techAssistances" [settings]="dropdownSettings"
+                                            disabled>
+                                        </angular2-multiselect>
+                                        <div *ngIf="submitted && f.techAssisID.errors" class="invalid-feedback">
+                                            <div *ngIf="f.techAssisID.errors.required">Technical Assistance is/are required
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="file">Upload Organization Logo: </label>
+                                    <div class=" row">
+                                        <div class="col-md-2 form-group center">
+                                            <label for="file">
+                                                <img width="80px" height="80px"
+                                                    [src]="companyFlagSize ? companyLogo : dLogo" class="ImgIcon" />
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10 ">
+                                            <input type="file" accept="image/*" id="chooseFile" (change)="onOrganizationLogoChange($event)" formControlName="organizationLogo" [ngClass]="{ 'is-invalid': submitted && f.organizationLogo.errors }" class="form-control form-control-override chooseFile">
+                                            <span id="sizeValidations">Note: File size should not exceed 200kb</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="file">Upload Project Picture:</label>
+                                    <div class=" row">
+                                        <div class="col-md-2 form-group center">
+                                            <label for="file">
+                                                <img width="80px" height="80px"
+                                                    [src]="projectFlagSize ? projectLogo : dLogo" class="ImgIcon" />
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input type="file" accept="image/*" id="chooseFile1" (change)="onuploadProjPicChange($event)" formControlName="uploadProjPic" [ngClass]="{ 'is-invalid': submitted && f.uploadProjPic.errors }" class="form-control form-control-override chooseFile">
+                                            <span id="sizeValidations1">Note: File size should not exceed 200kb</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label>Proposed Budget(in USD)
+                                        <span class="asterick">*</span>
+                                    </label>
+                                    <input type="number" min="0" placeholder="Enter Proposed Budget" formControlName="proposedBudget" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.proposedBudget.errors }">
+                                    <div *ngIf="submitted && f.proposedBudget.errors" class="invalid-feedback">
+                                        <div *ngIf="f.proposedBudget.errors.required">Proposed Budget is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Popup Modal Starts here -->
+<div class="container">
+
+    <ng-template #templateApprove>
+        <form [formGroup]="adminApprovedForm">
+            <div class="modal-header wipoClass">
+                <h4 class="modal-title pull-left">Approve Application</h4>
+                <button type="button" class="close wipoClass pull-right" data-dismiss="modal" aria-label="close" (click)="modalRef.hide()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <label for="" class="wipoLabels"> Overall Auth Status:</label>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <p>
+                            <b>{{overalAuthStatus}}</b>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <label for="" class="wipoLabels"> Converted /existing party Id:</label>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <p>
+                            <b>{{partyID}}</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <label for="" class="wipoLabels">Authorised user Id:</label>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <p>
+                            <b> {{userID}}</b>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <label for="" class="wipoLabels">Converted Proposal Id:</label>
+                    </div>
+                    <div class="col-sm-3 WipoMargins">
+                        <p>
+                            <b>{{proposalID}}</b>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="refID" class="wipoLabels"> Authorised Ref Id:</label>
+                            <input type="text" class="form-control" formControlName="refID" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> EOI Request Id:</label>
+                            <input type="text" name="" id="" class="form-control" formControlName="eoiReqID" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 WipoMargins form-group">
+
+                        <label for="" class="wipoLabels"> Applicant auth status: </label>
+                        <span class="asterick">*</span>
+                        <select formControlName="appAuthStatus" class="form-control" [ngClass]="{ 'is-invalid': submittedPopUp && p.appAuthStatus.errors }">
+                                <option value="" >Select</option>
+                            <option *ngFor="let authstatus of authStatus " value={{authstatus.id}}>
+                                {{authstatus.itemName}}
+                            </option>
+
+                        </select>
+                        <div *ngIf="submittedPopUp && p.appAuthStatus.errors" class="invalid-feedback">
+                            <div *ngIf="p.appAuthStatus.errors.required">Applicant auth status is required</div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="instName" class="wipoLabels"> Institution or Organization name:</label>
+                            <input type="text" class="form-control" formControlName="instName" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Project Title:</label>
+                            <textarea rows="2" cols="100" class="form-control" formControlName="projTitle" disabled></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Eoi Request Auth status
+                                <span class="asterick">*</span>:
+                            </label>
+                            <select formControlName="eoiReqAuthStatus" class="form-control" [ngClass]="{ 'is-invalid': submittedPopUp && p.eoiReqAuthStatus.errors }">
+                                    <option value="" >Select</option>
+                                <option *ngFor="let auth_status of authStatus " value={{auth_status.id}}>
+                                    {{auth_status.itemName}}
+                                </option>
+                            </select>
+                            <div *ngIf="submittedPopUp && p.eoiReqAuthStatus.errors" class="invalid-feedback">
+                                <div *ngIf="p.eoiReqAuthStatus.errors.required">Eoi Request Auth status is required
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Submitted date:</label>
+                            <input type="text" class="form-control" formControlName="authDate" disabled>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-12 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Reason for approve
+                                <span class="asterick">*</span>:
+                            </label>
+                            <select formControlName="reason" class="form-control" [ngClass]="{ 'is-invalid': submittedPopUp && p.reason.errors }">
+                                    <option value="" >Select</option>
+                                <option *ngFor="let resons of reasonDropdown " value={{resons.id}}>{{resons.itemName}}
+                                </option>
+                            </select>
+                            <div *ngIf="submittedPopUp && p.reason.errors" class="invalid-feedback">
+                                <div *ngIf="p.reason.errors.required">Reason for approve is required</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> Comments:</label>
+                            <textarea rows="2" cols="100" class="form-control" formControlName="comment"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> User (first updated)</label>
+                            <input type="text" class="form-control" formControlName="firstUser" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> User (last updated):</label>
+                            <input type="text" class="form-control" formControlName="lastUser" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row divBtn">
+                    <div class="col-md-12 form-group">
+                        <a class="btn call-to-action" data-dismiss="modal" (click)="onSubmitPopUpData(1)">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </ng-template>
+</div>
+<div class="container">
+
+    <ng-template #templateReject>
+        <form [formGroup]="adminApprovedForm">
+            <div class="modal-header wipoClass">
+                <h4 class="modal-title pull-left">Reject Application</h4>
+                <button type="button" class="close wipoClass pull-right" data-dismiss="modal" aria-label="close" (click)="modalRef.hide()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <label for="" class="wipoLabels"> Overall Auth Status:</label>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <p>
+                            <b>{{overalAuthStatus}}</b>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <label for="" class="wipoLabels">Authorised user Id:</label>
+                    </div>
+                    <div class="col-sm-3 WipoMargins form-group">
+                        <p>
+                            <b> {{userID}}</b>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="refID" class="wipoLabels"> Authorised Ref Id:</label>
+                            <input type="text" class="form-control" formControlName="refID " disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 WipoMargins">
+                        <div class="form-group">
+                            <label for="" class="wipoLabels"> EOI Request Id:</label>
+                            <input type="text" name="" id="" class="form-control" formControlName="eoiReqID" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 WipoMargins form-group">
+
+                        <label for=""  class="wipoLabels"> Applicant auth status<span class="asterick">*</span>:</label>
+                            <select formControlName="appAuthStatus"  class="form-control"  [ngClass]="{ 'is-invalid' :
+                            submittedPopUp && p.appAuthStatus.errors }">
+                                <option value="">Select</option>
+                                    <option  value={{authstatus.id}} *ngFor="let authstatus of authStatus "  >
+                                        {{authstatus.itemName}}
+                                        </option>
+                                        </select>
+                                        <div *ngIf=" submittedPopUp && p.appAuthStatus.errors"  class="invalid-feedback">
+                                            <div *ngIf="p.appAuthStatus.errors.required">Applicant auth status is required</div>
+            </div>
+
+</div>
+
+<div class="col-sm-6 WipoMargins">
+    <div class="form-group">
+        <label for="instName" class="wipoLabels"> Institution or Organization name:</label>
+        <input type="text" class="form-control" formControlName="instName" disabled>
+    </div>
+</div>
+<!-- <div class="col-sm-6 WipoMargins">
+                            <div class="form-group">
+                                <label for="" class="wipoLabels"> Created date:</label>
+                                <input type="text" class="form-control" formControlName="authDate">
+                            </div>
+                        </div> -->
+</div>
+<div class="row">
+    <div class="col-sm-12 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> Project Title:</label>
+            <textarea rows="2" cols="100" class="form-control" formControlName="projTitle" disabled></textarea>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> Eoi Request Auth status<span class="asterick">*</span>:
+                        </label>
+            <select formControlName="eoiReqAuthStatus" class="form-control" [ngClass]="{ 'is-invalid': submittedPopUp && p.eoiReqAuthStatus.errors }">
+                    <option value="" >Select</option>
+                <option *ngFor="let auth_status of authStatus " value={{auth_status.id}}>
+                                {{auth_status.itemName}}
+                            </option>
+                        </select>
+            <div *ngIf="submittedPopUp && p.eoiReqAuthStatus.errors" class="invalid-feedback">
+                <div *ngIf="p.eoiReqAuthStatus.errors.required">Eoi Request Auth status is required</div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-sm-6 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> Submitted date:</label>
+            <input type="text" class="form-control" formControlName="authDate" disabled>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-sm-12 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> Reason for rejection<span class="asterick">*</span>:
+                        </label>
+            <select formControlName="reason" class="form-control" [ngClass]="{ 'is-invalid': submittedPopUp && p.reason.errors }">
+                    <option value="" >Select</option>
+                <option *ngFor="let resons of reasonDropdown " value={{resons.id}}>{{resons.itemName}}
+                            </option>
+
+
+                        </select>
+            <div *ngIf="submittedPopUp && p.reason.errors" class="invalid-feedback">
+                <div *ngIf="p.reason.errors.required">Reason for rejection is required</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> Comments:</label>
+            <textarea rows="2" cols="100" class="form-control" formControlName="comment"></textarea>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> User (first updated)</label>
+            <input type="text" class="form-control" formControlName="firstUser" disabled>
+        </div>
+    </div>
+    <div class="col-sm-6 WipoMargins">
+        <div class="form-group">
+            <label for="" class="wipoLabels"> User (last updated):</label>
+            <input type="text" class="form-control" formControlName="lastUser" disabled>
+        </div>
+    </div>
+</div>
+<div class="row divBtn">
+    <div class="col-md-12 form-group">
+        <a class="btn call-to-action" data-dismiss="modal" (click)="onSubmitPopUpData(2)">Submit</a>
+    </div>
+</div>
+</div>
+</form>
+</ng-template>
+</div>

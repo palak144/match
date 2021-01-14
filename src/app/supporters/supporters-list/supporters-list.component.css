@@ -1,0 +1,68 @@
+.pageHeadingName {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+h2.title {
+    font-weight: normal !important;
+    text-decoration: none;
+}
+
+.color {
+    color: black !important;
+}
+
+.SuppImg {
+    /*width: 300px;
+    height: 300px;*/
+    max-width: 180px;
+    max-height: 130px;
+    border: 8px solid white;
+    margin-left: 0;
+    box-shadow: 0 8px 6px -6px black;
+    cursor: pointer !important;
+}
+
+.supporterDetails h6.card-subtitle {
+    padding-bottom: 5px !important;
+    margin-top: 0px !important;
+}
+
+.colorLink {
+    color: #6F91C8 !important
+}
+
+.colorLink:hover {
+    text-decoration: underline !important
+}
+
+.color:hover {
+    text-decoration: none !important
+}
+
+.paginationcontrol {
+    margin-top: 22px;
+    font-size: 13px;
+}
+
+
+/*------------------------------------
+    media query (max-width: 767px)
+------------------------------------*/
+
+@media (max-width: 767px) {
+    .supporterDetails {
+        padding: 0px 10px 0px 20px !important;
+    }
+    .suppLogoAlign {
+        text-align: center !important;
+        margin-bottom: 30px !important
+    }
+    .card-title {
+        margin-bottom: .75rem;
+        text-align: center;
+    }
+}

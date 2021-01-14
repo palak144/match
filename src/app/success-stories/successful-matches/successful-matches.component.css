@@ -1,0 +1,84 @@
+.pageHeadingName {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.color {
+    color: black !important;
+}
+
+.matchImg {
+    max-width: 255px;
+    min-height: 130px;
+    max-height: 130px;
+    border: 8px solid white;
+    margin-left: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.matchLogoAlign {
+    text-align: center !important;
+}
+
+.colorLink {
+    color: #6F91C8 !important
+}
+
+.colorLink:hover {
+    text-decoration: underline !important
+}
+
+.color:hover {
+    text-decoration: none !important
+}
+
+.arrowStyleRight {
+    max-height: 50px;
+    margin-top: 110px;
+}
+
+.arrowStyleDown {
+    max-height: 50px;
+    display: none
+}
+
+.titleStyle {
+    min-height: 75px !important
+}
+
+.colWidth1 {
+    width: 46%;
+    margin-left: 18px;
+    padding-right: 10px;
+}
+
+.colWidth2 {
+    width: 46%;
+    padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .arrowStyleDown {
+        max-height: 50px;
+        margin-left: 45%;
+        display: block
+    }
+    .arrowStyleRight {
+        max-height: 50px;
+        margin-top: 90px;
+        display: none;
+    }
+    .colWidth1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+    .colWidth2 {
+        width: 100%;
+        padding: 20px;
+    }
+}

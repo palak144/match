@@ -1,0 +1,54 @@
+<body class="theme theme--blue" id="wipo-int">
+    <header class="cols cols--full" id="header" role="banner">
+        <div class="col">
+            <div class="container">
+                <a href="http://www.wipo.int/portal/en/"><img src="assets/images/logo__wipo-word-mark-en (1).svg" alt="WIPO logo" class="banner__logo"></a>
+                <div id="tools" *ngIf="(headerServiceService.visible)">
+                    <ul>
+                        <li><a href="https://www3.wipo.int/contact/en/area.jsp?area=match" target="_blank">{{'appComponent.contactUs' | translate}} </a></li>
+                        <li *ngIf=" !(navbarServiceService.visible) && !(userService.isUserLoggedIn)"><a class="linkWhite" href="https://www3.wipo.int/authpage/signin.xhtml?goto=https%3A%2F%2Fwww3-test.wipo.int%3A443%2Fmatch%2Fsecure%2Fuser-dashboard">{{'appComponent.signIn' | translate}}</a></li>
+                        <li *ngIf="  !(navbarServiceService.visible) && (userService.isUserLoggedIn)"><a class="linkWhite" (click)="signOutUser()">{{'appComponent.signOut' | translate}}</a></li>
+                        <li *ngIf=" (navbarServiceService.visible)"><a class="linkWhite" (click)="signOutAdmin()">{{'appComponent.signOut' | translate}}</a></li>
+                        <li class="language-switcher open accordion" id="accordionExample">
+                            <a class="tools__link dropdown-toggle collapsed linkWhite" id="arrowChange" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapseOne">{{selectLang}}</a>
+                            <ul class="alignCenter collapse" id="collapse" aria-labelledby="heading" data-parent="#accordionExample">
+                                <li [hidden]="selectLang=='عربي'"><a (click)="setLang('ar','عربي')">عربي</a></li>
+                                <li [hidden]="selectLang=='Espanol'"><a (click)="setLang('es','Espanol')">Espanol</a></li>
+                                <li [hidden]="selectLang=='English'"><a (click)="setLang('en','English')">English</a></li>
+                                <li [hidden]="selectLang=='中文'"><a (click)="setLang('zh','中文')">中文</a></li>
+                                <li [hidden]="selectLang=='Русский'"><a (click)="setLang('ru','Русский')">Русский</a></li>
+                                <li [hidden]="selectLang=='Français'"><a (click)="setLang('fr','Français')">Français</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <nav class="navigation user">
+                        <div class="container " *ngIf="navbarUserServiceService.visible">
+                            <ul class="navigation__flyout">
+                                <li class="flyout-control "> <a class="linkWhite" href="https://www3.wipo.int/match/secure/user-dashboard">{{'appComponent.Dashboard' | translate}}</a> </li>
+                                <li class="flyout-control "> <a class="linkWhite" [routerLink]="['/FAQs']">{{'appComponent.FAQs' | translate}}</a> </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> -->
+            </div>
+        </div>
+        <div>
+            <nav class="navigation admin">
+                <div class="container " *ngIf="navbarServiceService.visible">
+                    <ul class="navigation__flyout">
+                        <li class="flyout-control "> <a class="linkWhite" [routerLink]="['/admin-dashboard']">Dashboard</a> </li>
+                        <li class="flyout-control "> <a class="linkWhite" [routerLink]="['/admin-applications',0,0]">Applications</a> </li>
+                        <li class="flyout-control "> <a class="linkWhite" [routerLink]="['/create-admin-account']">Create Account</a> </li>
+                        <li class="flyout-control" class="floatRight">
+                            <a class="linkAdmin">{{loginService.loggedInAdminName}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <router-outlet> </router-outlet>
+</body>
